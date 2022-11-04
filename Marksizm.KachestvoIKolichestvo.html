@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="ru">
+<!-- load/load.tmpl
+See PHP for credits and license
+-->
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <title>Качество и количество</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="shortcut icon" href="serpo_kaj_martelo.gif" />
+  <link rel="icon" href="serpo_kaj_martelo.gif" />
+  <!--HTMLHeader--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: pre; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  
+span.anchor {
+    float: left;
+    font-size: 60%;
+    margin-left: -1em;
+    width: 1em;
+    position:relative; top:-0.1em;
+    text-align: center;
+}
+span.anchor a { text-decoration: none; }
+span.anchor a:hover { text-decoration: underline; }
+ol.toc { text-indent:-25px; list-style: none; margin-bottom:2px !important; margin-top:2px !important; }
+ol ol.toc { margin-left:-24px; text-indent:24px; }
+ol.toc li {text-align: left; }
+div.tocfloat { font-size: smaller; margin-bottom: 10px;
+    border-top: 1px dotted #555555; border-bottom: 1px dotted #555555;
+    padding-top: 5px;
+    width: 38%; float: right; margin-left: 10px; clear: right;
+    margin-right:-21px; padding-right: 13px; padding-left: 13px;
+    background-color: #eeeeee; }
+div.toc { font-size: smaller;
+    border: 1px dotted #cccccc;
+    background: #f7f7f7;
+    margin-bottom: 10px; }
+div.toc p { background-color: #f9f6d6;
+    padding: 5px;
+    border-bottom:  1px dotted #cccccc; }
+div.ref:target {
+  background-color: #B0D3EB;
+}
+div.ref {
+  margin: 0 !important;
+  padding: 0 !important;
+  border:  0 !important;
+  font-size: 85%;
+  text-align: left !important;
+}
+a.reflink {
+  vertical-align: baseline;
+  font-size: 0.8em;
+  position: relative;
+  top: -0.4em;
+}
+.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+  td.markup1 pre { white-space: pre-wrap; }
+  .noPmTOC, .PmTOCdiv:empty {display:none;}
+.PmTOCdiv { display: inline-block; font-size: 13px; overflow: auto; max-height: 500px;}
+.PmTOCdiv a { text-decoration: none;}
+.back-arrow {font-size: .9em; text-decoration: none;}
+#PmTOCchk + label {cursor: pointer;}
+#PmTOCchk {display: none;}
+#PmTOCchk:not(:checked) + label > .pmtoc-show {display: none;}
+#PmTOCchk:checked + label > .pmtoc-hide {display: none;}
+#PmTOCchk:checked + label + div {display: none;}table.sortable th { cursor: pointer; }
+table.sortable th::after { color: transparent; content: "\00A0\025B8"; }
+table.sortable th:hover::after { color: inherit; content: "\00A0\025B8"; }
+table.sortable th.dir-u::after { color: inherit; content: "\00A0\025BE"; }
+table.sortable th.dir-d::after { color: inherit; content: "\00A0\025B4"; } 
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none;}
+
+--></style>
+  <link href='commentboxplus.css' rel='stylesheet' type='text/css' /><script type="text/javascript">
+function toggle(obj, hide, show) {
+    var elstyle = document.getElementById(obj).style;
+    var text    = document.getElementById(obj + "tog");
+    if(!hide) { var hide = "скрыть"; }
+    if(!show) { var show = "показать"; }
+    if (elstyle.display == 'none') {
+        elstyle.display = 'block';
+        text.innerHTML  = hide;
+    } else {
+        elstyle.display = 'none';
+        text.innerHTML  = show;
+    }
+}
+</script>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='load.css' />
+
+  <!-- <link rel='stylesheet' href='load.css' type='text/css'/> -->
+
+
+</head>
+<body><a name='load_topofpage'></a>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbodycaption'></div>
+        <div class='pageleftbody' id='sidebar'>
+          
+<h1><a class='selflink' href='Marksizm.Marksizm.html' title='Энциклопедия марксизма'>Содержание</a></h1>
+<ul><li><a class='wikilink' href='Marksizm.KratkijObzor.html' title='Краткий обзор марксизма'>Марксизм: краткий обзор</a>
+</li><li><a class='wikilink' href='Category.Razdely.html' title='Разделы'>Основные разделы</a> <div class='fpltemplate'><ul  style='text-align: left;'><li  style='text-align: left;'> <a class='wikilink' href='Category.Neokonchennoe.html' title='&#39;&#39;Неоконченное&#39;&#39;'><em>Неоконченное</em></a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Avtoram.html' title='Авторам'>Авторам</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Istorija.html' title='История'>История</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.NauchnyjKommunizm.html' title='Научный коммунизм'>Научный коммунизм</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.OProizvedenijax.html' title='О произведениях'>О произведениях</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Personalii.html' title='Персоналии'>Персоналии</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politika.html' title='Политика'>Политика</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politehkonomija.html' title='Политэкономия'>Политэкономия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Filosofija.html' title='Философия'>Философия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Ehkonomika.html' title='Экономика'>Экономика</a>
+</li></ul>
+</div>
+</li></ul><hr />
+<ul><li><a class='urllink' href='/wiki/staticload.php' rel='nofollow'>Скачать</a>
+</li></ul><hr />
+<ul><li><a class='wikilink' href='Marksizm.RecentChanges.html' title='Последние изменения'>Последние изменения</a>
+</li></ul>
+        </div><!-- id='sidebar' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url(logo.gif);'
+           href='index.htm' title="Энциклопедия марксизма"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+          <!--PageTitleFmt--><h1 class='titlepage'>Качество и количество</h1><!--/PageTitleFmt-->
+          <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p class='vspace'>Качество и количество — категории философии, отражающие важные стороны объективной действительности. <em>Качество</em> выражает неотделимую от бытия объекта его существенную определённость, благодаря которой он является именно этим, а не иным объектом. <em>Количество</em> выражает внешнее, формальное взаимоотношение предметов или их частей, а также свойств, связей: их величину, число, степень проявления того или иного свойства. 
+</p>
+<p class='vspace'>Мир не состоит из готовых, законченных вещей, а представляет собой совокупность процессов, в которых вещи постоянно возникают, изменяются и уничтожаются. Но из этого не следует, что они не имеют определённой формы существования, абсолютно неустойчивы и неразличимы между собой (ср. <a title='Релятивизм' class='createlinktext' href='Marksizm.Reljativizm?action=edit.html'>Релятивизм</a>). Как бы ни изменялся предмет, но до поры до времени он остаётся именно этим, а не другим, качественно определённым предметом. <em>Качественная определённость</em> предметов и явлений есть то, что делает их устойчивыми, что разграничивает их и создаёт бесконечное разнообразие мира. <em>Качество</em> есть существенная определённость предмета, в силу которой он является данным, а не иным предметом и отличается от других предметов. 
+</p>
+<p class='vspace'>Диалектический материализм исходит из признания объективности и всеобщности качественной определённости вещей. Качество объекта обнаруживается в совокупности его свойств. При этом объект не состоит из свойств, не является своего рода «пучком свойств», а обладает ими: «&hellip;существуют не качества, а только вещи, обладающие качествами, и притом бесконечно многими качествами» <a class="reflink" name="back1" href="#ref1" title="Ф. Энгельс. Диалектика природы. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 20, с. 547.">[1]</a>. Под свойством понимается способ проявления определённой стороны качества объекта по отношению к другим объектам, с которыми он вступает во взаимодействие. 
+</p>
+<p class='vspace'>Качество предмета, как правило, не сводится к отдельным его свойствам. Оно связано с предметом как целым, охватывает его полностью и неотделимо от него. Поэтому понятие качества связывается с бытием предмета. Предмет не может, оставаясь самим собой, потерять свое качество. В отношениях какого-либо предмета с другими проявляются различные его свойства или группы свойств; в этом смысле можно говорить о многокачественности предметов и явлений. 
+</p>
+<p class='vspace'>Наряду с качественной определённостью все предметы обладают также количественной определённостью: определённой величиной, числом, объёмом, темпом протекания процессов, степенью развития свойств и т. д. <em>Количество</em> есть такая определённость вещи, благодаря которой (реально или мысленно) её можно разделить на однородные части и собрать эти части воедино. Однородность (подобие, сходство) частей или предметов — отличительный признак количества. Различия между предметами, не подобными друг другу, носят качественный, а различия между предметами подобными — количественный характер. В отличие от качества количество не связано так тесно с бытием предмета; количественные изменения не сразу ведут к уничтожению или существенному изменению предмета. Только достигнув определённой для каждого предмета границы, количественные изменения вызывают качественные. В этом смысле количественная определённость в отличие от качественной характеризуется внешним отношением к природе предметов. Поэтому она и может быть в процессе познания (например, в математике) отделена от содержания как от чего-то безразличного для дела. Исключительно широкая применимость математических теорий в различных по конкретному содержанию областях естествознания и техники объясняется тем, что математика изучает преимущественно количественные отношения. 
+</p>
+<p class='vspace'>Качество не может быть сведено к количеству, как это пытаются сделать <a title='Метафизика' class='createlinktext' href='Marksizm.Metafizika?action=edit.html'>метафизики</a>. Ни один предмет не обладает только качественной или только количественной стороной. Каждый предмет представляет собой единство определённого качества и количества (<a class='wikilink' href='Marksizm.Mera.html' title='Мера'>меру</a>); он есть качественная величина (количество) и количественно определённое качество. Нарушение меры приводит к изменению данного предмета или явления, к превращению его в другой предмет или явление (<a class='wikilink' href='Marksizm.ZakonPerexodaKolichestvennyxIzmenenijVKachestv.html' title='Закон перехода количественных изменений в качественные'>Закон перехода количественных изменений в качественные</a>). 
+</p>
+<p class='vspace'>Категория качества выражает определённую ступень познания человеком объективной реальности. На начальном этапе познания объект исследования выступает перед субъектом прежде всего каким-либо отдельным свойством или рядом свойств. В непосредственном чувственном восприятии качество выступает как некоторое множество свойств. «Сначала мелькают впечатления, затем выделяется нечто, — потом развиваются понятия качества&hellip; (определения вещи или явления) и количества&hellip; Самым первым и самым первоначальным является ощущение, а в нём неизбежно и качество&hellip;» <a class="reflink" name="back2" href="#ref2" title="В. И. Ленин. План диалектики  ]. ПСС, изд. 5,  т. 29, с. 301.">[2]</a>. Познание идёт от качества к количеству и далее к их единству — <a class='wikilink' href='Marksizm.Mera.html' title='Мера'>мере</a>.
+</p>
+<p class='vspace'>В различных науках на начальных этапах исследований применяются так называемые качественные методы, которые позволяют определить качественные различия и специфику предметов исследования в целом, без точного знания их количественного соотношения. Дальнейшее движение познания состоит в том, что качество всё более глубоко и точно начинает исследоваться количественными методами с применением аппарата математики.
+</p>
+<div class='vspace'></div><div class='frame'><div><b> Литература</b></div>
+<div class="ref" id="ref1"><a class="reflink" href="#back1">[1]</a>&nbsp; Ф. Энгельс. Диалектика природы<small>. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 20, с. 547.</small> </div>
+<div class="ref" id="ref2"><a class="reflink" href="#back2">[2]</a>&nbsp; В. И. Ленин. План диалектики  ]<small>. ПСС, изд. 5,  <a target='_blank'  class='urllink' href='http://uaio.ru/vil/29.htm#s301' rel='nofollow'>т. 29, с. 301</a></small>. </div>
+</div>
+
+<div class='vspace'></div><hr />
+<p>Разделы: <a class='categorylink' href='Category.Filosofija.html'>Философия</a>, <a class='categorylink' href='Category.DialekticheskijMaterializm.html'>Диалектический материализм</a>
+</p>
+<div class='vspace'></div><hr />
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+    </div><!-- id='content' -->
+<!--HTMLFooter-->
+  </div><!-- id='globalwrapper' -->
+
+
+</body>
+</html>

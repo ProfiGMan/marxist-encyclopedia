@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="ru">
+<!-- load/load.tmpl
+See PHP for credits and license
+-->
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <title>Стоимость</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="shortcut icon" href="serpo_kaj_martelo.gif" />
+  <link rel="icon" href="serpo_kaj_martelo.gif" />
+  <!--HTMLHeader--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: pre; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  
+span.anchor {
+    float: left;
+    font-size: 60%;
+    margin-left: -1em;
+    width: 1em;
+    position:relative; top:-0.1em;
+    text-align: center;
+}
+span.anchor a { text-decoration: none; }
+span.anchor a:hover { text-decoration: underline; }
+ol.toc { text-indent:-25px; list-style: none; margin-bottom:2px !important; margin-top:2px !important; }
+ol ol.toc { margin-left:-24px; text-indent:24px; }
+ol.toc li {text-align: left; }
+div.tocfloat { font-size: smaller; margin-bottom: 10px;
+    border-top: 1px dotted #555555; border-bottom: 1px dotted #555555;
+    padding-top: 5px;
+    width: 38%; float: right; margin-left: 10px; clear: right;
+    margin-right:-21px; padding-right: 13px; padding-left: 13px;
+    background-color: #eeeeee; }
+div.toc { font-size: smaller;
+    border: 1px dotted #cccccc;
+    background: #f7f7f7;
+    margin-bottom: 10px; }
+div.toc p { background-color: #f9f6d6;
+    padding: 5px;
+    border-bottom:  1px dotted #cccccc; }
+div.ref:target {
+  background-color: #B0D3EB;
+}
+div.ref {
+  margin: 0 !important;
+  padding: 0 !important;
+  border:  0 !important;
+  font-size: 85%;
+  text-align: left !important;
+}
+a.reflink {
+  vertical-align: baseline;
+  font-size: 0.8em;
+  position: relative;
+  top: -0.4em;
+}
+.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+  td.markup1 pre { white-space: pre-wrap; }
+  .noPmTOC, .PmTOCdiv:empty {display:none;}
+.PmTOCdiv { display: inline-block; font-size: 13px; overflow: auto; max-height: 500px;}
+.PmTOCdiv a { text-decoration: none;}
+.back-arrow {font-size: .9em; text-decoration: none;}
+#PmTOCchk + label {cursor: pointer;}
+#PmTOCchk {display: none;}
+#PmTOCchk:not(:checked) + label > .pmtoc-show {display: none;}
+#PmTOCchk:checked + label > .pmtoc-hide {display: none;}
+#PmTOCchk:checked + label + div {display: none;}table.sortable th { cursor: pointer; }
+table.sortable th::after { color: transparent; content: "\00A0\025B8"; }
+table.sortable th:hover::after { color: inherit; content: "\00A0\025B8"; }
+table.sortable th.dir-u::after { color: inherit; content: "\00A0\025BE"; }
+table.sortable th.dir-d::after { color: inherit; content: "\00A0\025B4"; } 
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none;}
+
+--></style>
+  <link href='commentboxplus.css' rel='stylesheet' type='text/css' /><script type="text/javascript">
+function toggle(obj, hide, show) {
+    var elstyle = document.getElementById(obj).style;
+    var text    = document.getElementById(obj + "tog");
+    if(!hide) { var hide = "скрыть"; }
+    if(!show) { var show = "показать"; }
+    if (elstyle.display == 'none') {
+        elstyle.display = 'block';
+        text.innerHTML  = hide;
+    } else {
+        elstyle.display = 'none';
+        text.innerHTML  = show;
+    }
+}
+</script>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='load.css' />
+
+  <!-- <link rel='stylesheet' href='load.css' type='text/css'/> -->
+
+
+</head>
+<body><a name='load_topofpage'></a>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbodycaption'></div>
+        <div class='pageleftbody' id='sidebar'>
+          
+<h1><a class='selflink' href='Marksizm.Marksizm.html' title='Энциклопедия марксизма'>Содержание</a></h1>
+<ul><li><a class='wikilink' href='Marksizm.KratkijObzor.html' title='Краткий обзор марксизма'>Марксизм: краткий обзор</a>
+</li><li><a class='wikilink' href='Category.Razdely.html' title='Разделы'>Основные разделы</a> <div class='fpltemplate'><ul  style='text-align: left;'><li  style='text-align: left;'> <a class='wikilink' href='Category.Neokonchennoe.html' title='&#39;&#39;Неоконченное&#39;&#39;'><em>Неоконченное</em></a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Avtoram.html' title='Авторам'>Авторам</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Istorija.html' title='История'>История</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.NauchnyjKommunizm.html' title='Научный коммунизм'>Научный коммунизм</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.OProizvedenijax.html' title='О произведениях'>О произведениях</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Personalii.html' title='Персоналии'>Персоналии</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politika.html' title='Политика'>Политика</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politehkonomija.html' title='Политэкономия'>Политэкономия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Filosofija.html' title='Философия'>Философия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Ehkonomika.html' title='Экономика'>Экономика</a>
+</li></ul>
+</div>
+</li></ul><hr />
+<ul><li><a class='urllink' href='/wiki/staticload.php' rel='nofollow'>Скачать</a>
+</li></ul><hr />
+<ul><li><a class='wikilink' href='Marksizm.RecentChanges.html' title='Последние изменения'>Последние изменения</a>
+</li></ul>
+        </div><!-- id='sidebar' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url(logo.gif);'
+           href='index.htm' title="Энциклопедия марксизма"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+          <!--PageTitleFmt--><h1 class='titlepage'>Стоимость</h1><!--/PageTitleFmt-->
+          <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p>Стоимость — воплощённый в товаре и овеществлённый в нём общественный труд товаропроизводителей. Стоимость — общественное свойство вещи, которое она приобретает в определённых исторических условиях — при наличии <a class='wikilink' href='Marksizm.TovarnoeProizvodstvo.html' title='Товарное производство'>товарного производства</a>. Стоимость создаётся в производстве, проявляется в обмене, когда произведённый товаропроизводителем <a class='wikilink' href='Marksizm.Tovar.html' title='Товар'>товар</a> приравнивается к другим товарам. Товаропроизводители связаны между собой системой общественного <a class='wikilink' href='Marksizm.RazdelenieTruda.html' title='Разделение труда'>разделения труда</a> и потому работают друг на друга, в силу чего их труд приобретает общественный характер. Отличаясь друг от друга как <a title='Потребительная Стоимость' class='createlinktext' href='Marksizm.PotrebitelqnajaStoimostq?action=edit.html'><em>потребительные стоимости</em></a>, обмениваемые товары имеют одно общее свойство, а именно — они продукты труда, на их производство затрачен труд, образующий их стоимость. Определённая пропорция, в которой одни товары обмениваются на другие, называется <em>меновой стоимостью</em>. Таким образом, стоимость (внутреннее свойство товара) внешне проявляется в акте обмена, т. е. в меновой стоимости, потребительная стоимость товара (полезность вещи) становится носителем меновой стоимости.
+</p>
+<p class='vspace'>Величина стоимости товара определяется количеством труда, общественно необходимого для его производства, и измеряется <a title='Рабочее Время' class='createlinktext' href='Marksizm.RabocheeVremja?action=edit.html'>рабочим временем</a>. Т. к. разные товаропроизводители затрачивают на производство одного и того же товара неодинаковое количество труда (времени), товары имеют различную индивидуальную стоимость. Но поскольку стоимость воплощает общественный труд, величина общественной (рыночной) стоимости не может определяться индивидуальными затратами труда. Общественная стоимость определяется общественно необходимым рабочим временем, т. е. временем, затрачиваемым на изготовление товара при данных общественно нормальных условиях производства и среднем в данном обществе уровне умелости и интенсивности труда, или временем, затрачиваемым на производство основной массы товаров данного вида. В условиях частной собственности пропорции в обмене товаров стихийно регулируются общественно необходимыми затратами труда (рабочего времени) в процессе <a title='Конкуренция' class='createlinktext' href='Marksizm.Konkurencija?action=edit.html'>конкурентной борьбы</a>. На величину стоимости оказывает влияние и степень сложности труда. Величина стоимости измеряется затратами простого труда, к выполнению которого способен любой работник, не получивший специальной подготовки. В процессе обмена разнообразных товаров происходит сведение всех видов <a title='Сложный Труд' class='createlinktext' href='Marksizm.SlozhnyjTrud?action=edit.html'>сложного труда</a> к простому. В результате сложный труд выступает как умноженный простой труд, и каждый час сложного труда в обмене приравнивается к большему количеству простого труда.
+</p>
+<p class='vspace'>Начало теории трудовой стоимости было положено <a title='Петти' class='createlinktext' href='Marksizm.Petti?action=edit.html'>У. Петти</a>, <a title='Смит' class='createlinktext' href='Marksizm.Smit?action=edit.html'>А. Смитом</a> и <a title='Рикардо' class='createlinktext' href='Marksizm.Rikardo?action=edit.html'>Д. Рикардо</a>. Но эта теория была научно обоснована, наиболее последовательно и всесторонне, со всеми вытекающими социальными и классовыми выводами разработана <a title='Маркс' class='createlinktext' href='Marksizm.Marks?action=edit.html'>К. Марксом</a>. Буржуазная вульгарная политическая экономия пыталась и пытается опровергнуть теорию трудовой стоимости. В буржуазной экономической науке, например, широко распространена трактовка меновой стоимости, как выражения потребительной стоимости. Согласно этой концепции, меновые пропорции товаров определяются не затраченным общественным трудом, а якобы потребительной стоимостью товара (см. <a title='Теория Предельной Полезности' class='createlinktext' href='Marksizm.TeorijaPredelqnojPoleznosti?action=edit.html'>Теория предельной полезности</a>). Другая, не менее распространённая теория стоимости — это теория, согласно которой стоимость является результатом действия трёх факторов производства — труда, капитала и земли (см. <a title='Теории Производительности' class='createlinktext' href='Marksizm.TeoriiProizvoditelqnosti?action=edit.html'>Теории производительности</a>). В действительности количество общественно необходимого труда, затраченного на производство товара, определяет его стоимость и те пропорции, в которых один товар обменивается на другой. «…Чем больше производительная сила труда, тем меньше рабочее время, необходимое для изготовления известного изделия, тем меньше кристаллизованная в нем масса труда, тем меньше его стоимость» <a class="reflink" name="back1" href="#ref1" title="К. Маркс.  Капитал. Критика политической экономии. Том первый. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 23, с. 49.">[1]</a>. Теория трудовой стоимости, разработанная Марксом, послужила основой его теории <a class='wikilink' href='Marksizm.PribavochnajaStoimostq.html' title='Прибавочная стоимость'>прибавочной стоимости</a>.
+</p>
+<p class='vspace'>Ранней стадии обмена, когда он носил случайный характер, соответствовала простая, единичная, или случайная, форма стоимости; товар, выражавший свою стоимость в другом товаре, выступал в относительной форме стоимости, товар, который выражал стоимость другого товара, находился в эквивалентной форме стоимости, т. е. являлся эквивалентом первого товара. Относительная форма стоимости отражает прежде всего однородность обмениваемых товаров как продуктов человеческого абстрактного труда. На стадии случайного обмена роль эквивалента выполняет один, случайный товар. С первым крупным общественным разделением труда — отделением скотоводства от земледелия — обмен стал более регулярным, скот систематически обменивался на другие товары, которые выступали не как случайные, а как особенные эквиваленты, к которым он приравнивался. Этой стадии обмена соответствовала полная, или развёрнутая, форма стоимости, при которой один товар выражал свою стоимость в целом ряде других товаров. По мере того, как обмен становился регулярным, развёрнутая форма стоимости превращалась постепенно во всеобщую, когда из товарного мира стихийно выделился один товар, ставший эквивалентом всех других товаров, т. е. всеобщим эквивалентом. Роль всеобщего эквивалента играл только один товар, в котором все товары выражали свою стоимость единообразно. Всеобщий эквивалент обладает свойством всеобщей обмениваемости. Функцию всеобщего эквивалента в зависимости от конкретных условий производства выполняли различные товары: скот, шкуры диких зверей, рыба и т. д. Когда обмен вышел за рамки местного рынка, возникла необходимость в закреплении функции всеобщего эквивалента лишь за одним товаром, который стал <a class='wikilink' href='Marksizm.Denqgi.html' title='Деньги'>деньгами</a>. Этой стадии обмена соответствовала денежная форма стоимости. Роль денег первоначально выполняли различные товары, но окончательно она закрепилась за одним товаром — золотом, которое в силу своих свойств наиболее подходит к выполнению роли денег. С возникновением денег стоимость всех товаров выражается в деньгах, тем самым товары приобрели <a class='wikilink' href='Marksizm.Cena.html' title='Цена'>цену</a>. На рынке под влиянием <a title='Спрос И Предложение' class='createlinktext' href='Marksizm.SprosIPredlozhenie?action=edit.html'>спроса и предложения</a> цена колеблется вокруг стоимости (см. <a class='wikilink' href='Marksizm.CenaIZakonStoimosti#toc2.html' title='Цена и закон стоимости'>Закон стоимости</a>).
+</p>
+<p class='vspace'>Стоимость товара выражает стоимость, созданную прошлым трудом и перенесённую конкретным трудом на данный товар с потреблённых средств производства, и новую (вновь созданную) стоимость, присоединённую живым трудом к товару в данном производственном процессе. С ростом технической оснащённости производства при общем снижении стоимости единицы продукции доля в ней прошлого труда относительно возрастает, а доля вновь созданной стоимости уменьшается. В каждой <a class='wikilink' href='Marksizm.Obshhestvenno-ehkonomicheskajaFormacija.html' title='Общественно-экономическая Формация'>общественно-экономической формации</a>, где существует <a class='wikilink' href='Marksizm.TovarnoeProizvodstvo.html' title='Товарное производство'>товарное производство</a>, соотношение прошлой и вновь созданной стоимости выражает специфические для данной формации <a class='wikilink' href='Marksizm.ProizvodstvennyeOtnoshenija.html' title='Производственные отношения'>производственные отношения</a>. В условиях <a class='wikilink' href='Marksizm.Kapitalizm.html' title='Капитализм'>капитализма</a> стоимость состоит из: <em><a class='wikilink' href='Marksizm.Kapital#constvar.html' title='Капитал'>постоянного капитала</a></em> (<em>c</em>), потреблённого в процессе производства данного товара; <em><a class='wikilink' href='Marksizm.Kapital#constvar.html' title='Капитал'>переменного капитала</a></em> (<em>v</em>) — части вновь созданной стоимости, которая эквивалентна стоимости рабочей силы, потреблённой в процессе производства; <a class='wikilink' href='Marksizm.PribavochnajaStoimostq.html' title='Прибавочная стоимость'>прибавочной стоимости</a> (<em>m</em>) — части вновь созданной стоимости, безвозмездно присваиваемой капиталистами. Общественная стоимость товара совпадает с действительными общественными <a title='Издержки Производства' class='createlinktext' href='Marksizm.IzderzhkiProizvodstva?action=edit.html'>издержками производства</a>, но отличается от капиталистических издержек производства на величину прибавочной стоимости. В условиях развитого капитализма в результате стихийного перераспределения прибавочной стоимости и выравнивания <a class='wikilink' href='Marksizm.Pribylq.html' title='Прибыль'>прибыли</a> в <a class='wikilink' href='Marksizm.SrednjajaNormaPribyliICenaProizvodstva#average.html' title='Средняя норма прибыли и цена производства'>среднюю прибыль</a> стоимость товаров превращается в <a class='wikilink' href='Marksizm.SrednjajaNormaPribyliICenaProizvodstva#price_o.html' title='Средняя норма прибыли и цена производства'>цену производства</a>.
+</p>
+<p class='vspace'>Стоимость — историческая категория, существование которой связано с товарно-денежными отношениями, преодолеваемыми при коммунизме. 
+</p>
+<div class='vspace'></div><div class='indent'>«Единственная стоимость, которую знает политическая экономия, есть стоимость товаров. Что такое товары? Это — продукты, произведённые в обществе более или менее обособленных частных производителей, т. е. прежде всего частные продукты. Но эти частные продукты только тогда становятся товарами, когда они производятся не для собственного потребления, а для потребления другими людьми, стало быть, для общественного потребления; они вступают в общественное потребление путём обмена». <a class="reflink" name="back2" href="#ref2" title="Ф. Энгельс.  Анти-Дюринг. Переворот в науке, произведённый господином Евгением Дюрингом. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 20, с. 318.">[2]</a>.
+</div><p class='vspace'>Поскольку при коммунизме (включая его низшую фазу — социализм) по определению нет обмена, нет товарно-денежных отношений, нет товарного производства и рынка, а есть плановое общественное производство и распределение продуктов производства, то, следовательно, стоимость при коммунизме не существует. 
+</p>
+<p class='vspace'>Пропорции в производстве и распределении при коммунизме (включая социализм) соблюдаются через план и учёт затраченного рабочего времени, но не через рынок и не через категорию стоимости.
+</p>
+<div class='vspace'></div><div class='frame'><div><b> Литература</b></div>
+<div class="ref" id="ref1"><a class="reflink" href="#back1">[1]</a>&nbsp; К. Маркс.  <a target='_blank'  class='urllink' href='http://esperanto.mv.ru/Marksismo/Kapital1/kapital1-01.html#p49.html' rel='nofollow'>Капитал. Критика политической экономии. Том первый</a><small>. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 23, с. 49.</small> </div>
+<div class="ref" id="ref2"><a class="reflink" href="#back2">[2]</a>&nbsp; Ф. Энгельс.  <a target='_blank'  class='urllink' href='http://esperanto.mv.ru/Marksismo/Antiduering/antid-3-04.html#p318.html' rel='nofollow'>Анти-Дюринг. Переворот в науке, произведённый господином Евгением Дюрингом</a><small>. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 20, с. 318.</small> </div>
+</div>
+
+<div class='vspace'></div><hr />
+<p>Входит в разделы: <a class='categorylink' href='Category.Politehkonomija.html'>Политэкономия</a>
+</p>
+<div class='vspace'></div><hr />
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+    </div><!-- id='content' -->
+<!--HTMLFooter-->
+  </div><!-- id='globalwrapper' -->
+
+
+</body>
+</html>

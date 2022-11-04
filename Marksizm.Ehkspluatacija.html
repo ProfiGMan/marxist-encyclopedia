@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="ru">
+<!-- load/load.tmpl
+See PHP for credits and license
+-->
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <title>Эксплуатация</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="shortcut icon" href="serpo_kaj_martelo.gif" />
+  <link rel="icon" href="serpo_kaj_martelo.gif" />
+  <!--HTMLHeader--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: pre; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  
+span.anchor {
+    float: left;
+    font-size: 60%;
+    margin-left: -1em;
+    width: 1em;
+    position:relative; top:-0.1em;
+    text-align: center;
+}
+span.anchor a { text-decoration: none; }
+span.anchor a:hover { text-decoration: underline; }
+ol.toc { text-indent:-25px; list-style: none; margin-bottom:2px !important; margin-top:2px !important; }
+ol ol.toc { margin-left:-24px; text-indent:24px; }
+ol.toc li {text-align: left; }
+div.tocfloat { font-size: smaller; margin-bottom: 10px;
+    border-top: 1px dotted #555555; border-bottom: 1px dotted #555555;
+    padding-top: 5px;
+    width: 38%; float: right; margin-left: 10px; clear: right;
+    margin-right:-21px; padding-right: 13px; padding-left: 13px;
+    background-color: #eeeeee; }
+div.toc { font-size: smaller;
+    border: 1px dotted #cccccc;
+    background: #f7f7f7;
+    margin-bottom: 10px; }
+div.toc p { background-color: #f9f6d6;
+    padding: 5px;
+    border-bottom:  1px dotted #cccccc; }
+div.ref:target {
+  background-color: #B0D3EB;
+}
+div.ref {
+  margin: 0 !important;
+  padding: 0 !important;
+  border:  0 !important;
+  font-size: 85%;
+  text-align: left !important;
+}
+a.reflink {
+  vertical-align: baseline;
+  font-size: 0.8em;
+  position: relative;
+  top: -0.4em;
+}
+.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+  td.markup1 pre { white-space: pre-wrap; }
+  .noPmTOC, .PmTOCdiv:empty {display:none;}
+.PmTOCdiv { display: inline-block; font-size: 13px; overflow: auto; max-height: 500px;}
+.PmTOCdiv a { text-decoration: none;}
+.back-arrow {font-size: .9em; text-decoration: none;}
+#PmTOCchk + label {cursor: pointer;}
+#PmTOCchk {display: none;}
+#PmTOCchk:not(:checked) + label > .pmtoc-show {display: none;}
+#PmTOCchk:checked + label > .pmtoc-hide {display: none;}
+#PmTOCchk:checked + label + div {display: none;}table.sortable th { cursor: pointer; }
+table.sortable th::after { color: transparent; content: "\00A0\025B8"; }
+table.sortable th:hover::after { color: inherit; content: "\00A0\025B8"; }
+table.sortable th.dir-u::after { color: inherit; content: "\00A0\025BE"; }
+table.sortable th.dir-d::after { color: inherit; content: "\00A0\025B4"; } 
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none;}
+
+--></style>
+  <link href='commentboxplus.css' rel='stylesheet' type='text/css' /><script type="text/javascript">
+function toggle(obj, hide, show) {
+    var elstyle = document.getElementById(obj).style;
+    var text    = document.getElementById(obj + "tog");
+    if(!hide) { var hide = "скрыть"; }
+    if(!show) { var show = "показать"; }
+    if (elstyle.display == 'none') {
+        elstyle.display = 'block';
+        text.innerHTML  = hide;
+    } else {
+        elstyle.display = 'none';
+        text.innerHTML  = show;
+    }
+}
+</script>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='load.css' />
+
+  <!-- <link rel='stylesheet' href='load.css' type='text/css'/> -->
+
+
+</head>
+<body><a name='load_topofpage'></a>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbodycaption'></div>
+        <div class='pageleftbody' id='sidebar'>
+          
+<h1><a class='selflink' href='Marksizm.Marksizm.html' title='Энциклопедия марксизма'>Содержание</a></h1>
+<ul><li><a class='wikilink' href='Marksizm.KratkijObzor.html' title='Краткий обзор марксизма'>Марксизм: краткий обзор</a>
+</li><li><a class='wikilink' href='Category.Razdely.html' title='Разделы'>Основные разделы</a> <div class='fpltemplate'><ul  style='text-align: left;'><li  style='text-align: left;'> <a class='wikilink' href='Category.Neokonchennoe.html' title='&#39;&#39;Неоконченное&#39;&#39;'><em>Неоконченное</em></a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Avtoram.html' title='Авторам'>Авторам</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Istorija.html' title='История'>История</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.NauchnyjKommunizm.html' title='Научный коммунизм'>Научный коммунизм</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.OProizvedenijax.html' title='О произведениях'>О произведениях</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Personalii.html' title='Персоналии'>Персоналии</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politika.html' title='Политика'>Политика</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politehkonomija.html' title='Политэкономия'>Политэкономия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Filosofija.html' title='Философия'>Философия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Ehkonomika.html' title='Экономика'>Экономика</a>
+</li></ul>
+</div>
+</li></ul><hr />
+<ul><li><a class='urllink' href='/wiki/staticload.php' rel='nofollow'>Скачать</a>
+</li></ul><hr />
+<ul><li><a class='wikilink' href='Marksizm.RecentChanges.html' title='Последние изменения'>Последние изменения</a>
+</li></ul>
+        </div><!-- id='sidebar' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url(logo.gif);'
+           href='index.htm' title="Энциклопедия марксизма"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+          <!--PageTitleFmt--><h1 class='titlepage'>Эксплуатация</h1><!--/PageTitleFmt-->
+          <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p class='vspace'>Эксплуатация (франц. exploitation) — безвозмездное присвоение одними 
+общественными <a class='wikilink' href='Marksizm.Klassy.html' title='Классы'>классами</a> и группами продуктов <a class='wikilink' href='Marksizm.Trud.html' title='Труд'>труда</a> 
+других классов. 
+</p>
+<p class='vspace'>Эксплуатация возникает в период разложения 
+<a class='wikilink' href='Marksizm.PervobytnoobshhinnyjStroj.html' title='Первобытнообщинный строй'>первобытнообщинного строя</a> в связи с появлением 
+<a title='Частная Собственность' class='createlinktext' href='Marksizm.ChastnajaSobstvennostq?action=edit.html'>частной собственности</a> на <a class='wikilink' href='Marksizm.SredstvaProizvodstva.html' title='Средства производства'>средства производства</a>, 
+ведущей к делению общества на антагонистические классы. 
+</p>
+<p class='vspace'>Возникновение эксплуатации связано с преодолением порабощения 
+человека силами природы. Появляется <a class='wikilink' href='Marksizm.RazdelenieTruda.html' title='Разделение труда'>разделение труда</a>, 
+которое освобождает <em>часть</em> людей от <a class='wikilink' href='Marksizm.Trud.html' title='Труд'>труда</a> и позволяет им заниматься 
+умственными видами деятельности (собственно человеческой деятельностью), 
+для чего необходимо порабощение другой части людей.
+</p>
+<p class='vspace'>Материальной предпосылкой для эксплуатации является такой уровень развития 
+<a class='wikilink' href='Marksizm.ProizvoditelqnyeSily.html' title='Производительные силы'>производительных сил</a>, при
+котором работник может производить продукт не только для покрытия своих
+минимальных потребностей, для воспроизводства своей <a class='wikilink' href='Marksizm.RabochajaSila.html' title='Рабочая сила'>рабочей силы</a>
+(<em>необходимый продукт</em>), но и известный излишек (<em>прибавочный продукт</em>),
+который и присваивается владельцами средств производства. Пока не достигнут
+такой уровень, эксплуатация невозможна.
+</p>
+<p class='vspace'>Эксплуатация проходит через ряд стадий, которые являются специфичными
+для каждой антагонистической 
+<a class='wikilink' href='Marksizm.Obshhestvenno-ehkonomicheskajaFormacija.html' title='Общественно-экономическая Формация'>общественно-экономической формации</a> 
+и определяются способом соединения рабочей силы со средствами
+производства. По мере роста производительных сил и всё большего 
+освобождения человека из-под власти сил природы эксплуатация 
+приходит к собственному отрицанию и исчезает в 
+<a class='wikilink' href='Marksizm.Kommunizm.html' title='Коммунизм'>коммунистической формации</a>, кладущей конец порабощения
+человека человеком.
+</p>
+<p class='vspace'><em>Степень эксплуатации</em> измеряется отношением прибавочного продукта к 
+необходимому продукту (соответственно, прибавочного труда к 
+необходимому труду).
+</p>
+<div class='vspace'></div><div class='toc'><p><a name='toc' id='toc'></a><b>Содержание</b> (<a id="tocidtog" href="javascript:toggle('tocid');">скрыть</a>)</p><ol class='toc' id='tocid'><li>&nbsp;&nbsp;1.&nbsp;&nbsp;<a href='#toc1'>Эксплуатация в рабовладельческом обществе</a>
+</li><li>&nbsp;&nbsp;2.&nbsp;&nbsp;<a href='#toc2'>Эксплуатация при феодализме</a>
+</li><li>&nbsp;&nbsp;3.&nbsp;&nbsp;<a href='#toc3'>Эксплуатация при капитализме</a><ol class='toc'><li>&nbsp;&nbsp;3.1.&nbsp;&nbsp;<a href='#toc4'>Основная форма эксплуатации при капитализме</a>
+</li><li>&nbsp;&nbsp;3.2.&nbsp;&nbsp;<a href='#toc5'>Эксплуатация при монополистическом капитализме</a>
+</li><li>&nbsp;&nbsp;3.3.&nbsp;&nbsp;<a href='#toc6'>Противодействующая тенденция</a>
+</li><li>&nbsp;&nbsp;3.4.&nbsp;&nbsp;<a href='#toc7'>Другие формы эксплуатации при капитализме</a></li></ol>
+</li><li>&nbsp;&nbsp;4.&nbsp;&nbsp;<a href='#toc8'>Историческая ограниченность эксплуатации</a></li></ol></div>
+<div class='vspace'></div><h1><a name='toc530' id='toc530'></a>283.&ensp;Эксплуатация в рабовладельческом обществе</h1>
+<p>При <a class='wikilink' href='Marksizm.RabovladelqcheskijStroj.html' title='Рабовладельческий строй'>рабовладении</a> — первой исторической 
+форме эксплуататорского общества — эксплуатируемые (рабы) были не только 
+лишены средств производства, но и сами находились в 
+<a title='Собственность' class='createlinktext' href='Marksizm.Sobstvennostq?action=edit.html'>собственности</a> эксплуататоров-рабовладельцев. 
+Рабы были подчинены чужой воле, принуждающей их к труду по её усмотрению.
+Весь создаваемый продукт безвозмездно присваивался классом рабовладельцев, 
+которые выделяли рабам жизненные средства, едва достаточные для 
+полуголодного существования. Эксплуатация осуществлялась прямым
+принуждением к труду (так называемое <em>внеэкономическое принуждение</em>).
+</p>
+<div class='vspace'></div><h1><a name='toc531' id='toc531'></a>284.&ensp;Эксплуатация при феодализме</h1>
+<p>При <a class='wikilink' href='Marksizm.Feodalizm.html' title='Феодализм'>феодализме</a> эксплуатируемые (крестьяне) находились в личной 
+зависимости от собственников земли (феодалов), но, в отличие от рабов, 
+владели участками земли, которыми их наделяли феодалы, и орудиями труда. 
+Основой эксплуатации являлась собственность класса феодалов на землю. 
+Прибавочный продукт, создаваемый трудом крестьян, безвозмездно присваивался 
+феодалами и принимал форму феодальной земельной ренты.
+</p>
+<p class='vspace'>В отличие от рабов, крестьяне уже имели собственность, привязывавшую их
+к земле и хозяйству. Эта собственность выступала формой опосредствованного 
+принуждения к труду, которое стало необходимостью в силу изменившегося 
+характера производительных сил: рабский труд без экономической
+заинтересованности работника оказался неэффективным при уровне развития
+производительных сил, более высоком, чем при рабовладении.
+</p>
+<p class='vspace'>Феодальная эксплуатация прошла два основных этапа: <em>барщинное хозяйство</em> 
+и <em>оброчное хозяйство</em>. В условиях барщинного хозяйства крестьянин часть 
+времени работал на земле феодала, а часть &mdash; на надельной. Необходимый и 
+прибавочный труд, таким образом, были отделены друг от друга во времени 
+и в пространстве. При <em>оброчной системе</em> весь труд затрачивался в 
+хозяйстве крестьянина. В барщинном хозяйстве прибавочный труд принимал 
+форму отработочной ренты, в оброчном &mdash; продуктовой и денежной.
+</p>
+<p class='vspace'>В обоих случаях эксплуатация осуществлялась путём прямого принуждения 
+крестьян к прибавочному труду, сочетаясь с экономическим (материальным) 
+интересом крестьянина (чего не было при рабовладении). 
+</p>
+<div class='vspace'></div><h1><a name='toc532' id='toc532'></a>285.&ensp;Эксплуатация при капитализме</h1>
+<h2><a name='toc533' id='toc533'></a>285.1.&ensp;Основная форма эксплуатации при капитализме</h2>
+<p>Особенностью <a class='wikilink' href='Marksizm.Kapitalizm.html' title='Капитализм'>капиталистической</a> формы эксплуатации 
+является личная независимость эксплуатируемых <a class='wikilink' href='Marksizm.Proletariat.html' title='Пролетариат'>рабочих</a>. 
+</p>
+<p class='vspace'>В отличие от феодализма, при капитализме работник не имеет 
+собственности, которая теперь стала помехой его эксплуатации. В 
+этом отношении капитализм «возвращается» к рабству, но на новом 
+уровне развития, при котором личная свобода работника является 
+условием его порабощения.
+</p>
+<p class='vspace'><a class='wikilink' href='Marksizm.Burzhuazija.html' title='Буржуазия'>Капиталисты</a> эксплуатируют рабочих не путём 
+внеэкономического принуждения (как было при рабовладении) и не 
+сочетанием экономического интереса и внеэкономического принуждения 
+(как при феодализме), а путём <em>экономического принуждения</em>: 
+будучи лишёнными средств к существованию, рабочие вынуждены 
+наниматься на работу к капиталистам, т. е. продавать им свою 
+рабочую силу, превратившуюся в условиях товарно-денежных 
+отношений в особый <a class='wikilink' href='Marksizm.Tovar.html' title='Товар'>товар</a>, в процессе потребления которого, 
+т. е. в процессе <a class='wikilink' href='Marksizm.Trud.html' title='Труд'>труда</a>, создаётся <a class='wikilink' href='Marksizm.Stoimostq.html' title='Стоимость'>стоимость</a> бо&#769;льшая, 
+чем стоимость само&#769;й рабочей силы. Созданная трудом рабочих 
+новая стоимость распадается на стоимость жизненных средств, 
+необходимых рабочему (она выплачивается ему в виде заработной 
+платы), и <a class='wikilink' href='Marksizm.PribavochnajaStoimostq.html' title='Прибавочная стоимость'>прибавочную стоимость</a>, 
+которую присваивает капиталист (см. также <a class='wikilink' href='Marksizm.PodchinenieTrudaKapitalu.html' title='Подчинение труда капиталу'>Подчинение труда капиталу</a>).
+</p>
+<p class='vspace'>Отношение прибавочной стоимости к переменному капиталу (эквиваленту 
+стоимости рабочей силы) или отношение прибавочного труда, создающего 
+прибавочную стоимость, к необходимому труду, создающему стоимость 
+необходимых рабочим средств, характеризует 
+<em>степень эксплуатации рабочего класса</em>, которую Маркс назвал 
+<a class='wikilink' href='Marksizm.PribavochnajaStoimostq#toc3.html' title='Прибавочная стоимость'>нормой прибавочной стоимости</a>.
+</p>
+<p class='vspace'>Поскольку целью капиталистического производства является получение
+наибольшей <a class='wikilink' href='Marksizm.Pribylq.html' title='Прибыль'>прибыли</a>, капиталисты всемерно стремятся повысить 
+степень эксплуатации трудящихся. Методы усиления капиталистической 
+эксплуатации — удлинение рабочего  дня при неизменной величине 
+необходимого рабочего времени 
+(<em>абсолютная прибавочная стоимость</em>) или уменьшение 
+необходимого рабочего времени при неизменном рабочем дне 
+(<em>относительная прибавочная стоимость</em>) (подробнее см. 
+<a class='wikilink' href='Marksizm.PribavochnajaStoimostq#toc2.html' title='Прибавочная стоимость'>Производство прибавочной стоимости</a>). 
+</p>
+<p class='vspace'>Рост организованности рабочего движения заставил капиталистов 
+пойти на ограничение рабочего дня или рабочей недели. Хотя 
+капиталисты прибегают к сверхурочным работам, т. е. к увеличению 
+рабочего времени сверх установленной его величины по коллективному 
+договору с профсоюзами или по закону, тем не менее увеличение
+продолжительности рабочего дня не является ныне основным методом 
+повышения степени эксплуатации. Правда, капиталисты широко 
+используют для усиления эксплуатации повышение интенсивности труда, 
+что равнозначно увеличению продолжительности рабочего дня, 
+т. е. увеличению фактических затрат труда.
+</p>
+<p class='vspace'>Одним из основных методов роста эксплуатации рабочего класса является 
+рост производительности труда, который позволяет снижать затраты 
+труда на производство необходимых для рабочего жизненных средств, 
+т. е. создает условия для снижения стоимости рабочей силы и необходимого 
+рабочего времени.
+</p>
+<div class='vspace'></div><h2><a name='toc534' id='toc534'></a>285.2.&ensp;Эксплуатация при монополистическом капитализме</h2>
+<p>Степень эксплуатации особенно возрастает в условиях 
+<a class='wikilink' href='Marksizm.Imperializm.html' title='Империализм'>монополистического капитализма</a>. В современных 
+условиях концентрация колоссальных материальных и трудовых 
+ресурсов в руках капиталистических монополий обеспечивает 
+извлечение ими монопольной прибыли. Сращивание экономической
+силы монополий с силой буржуазного государства в единый механизм,
+образование и развитие финансового капитала делают трудящихся
+капиталистических стран объектом эксплуатации на всех стадиях 
+воспроизводства общественного капитала. 
+</p>
+<p class='vspace'>На предприятиях монополий эксплуатация, как правило, выше, 
+чем у немонополизированных предпринимателей. Кроме того, 
+через механизм <a class='wikilink' href='Marksizm.CenaIZakonStoimosti#toc7.html' title='Цена и закон стоимости'>монопольных цен</a> 
+монополисты присваивают прибавочную стоимость, создаваемую 
+рабочими на предприятиях немонополистического сектора, 
+а также трудящимися в экономически зависимых странах. 
+</p>
+<p class='vspace'>В современных условиях монополии активно
+используют для повышения степени эксплуатации научно-технический 
+прогресс. Новейшая техника служит средством интенсификации 
+труда рабочих. Важнейший результат научно-технического 
+прогресса — рост производительности труда — позволяет монополиям 
+относительно уменьшить затраты на рабочую силу. Для
+давления на рабочих, усиления их эксплуатации монополии используют
+<a class='wikilink' href='Marksizm.OtnositelqnoePerenaselenie.html' title='Относительное перенаселение'>безработицу</a>. 
+</p>
+<p class='vspace'>При 
+<a class='wikilink' href='Marksizm.Gosudarstvenno-monopolisticheskijKapitalizm.html' title='Государственно-монополистический капитализм'>государственно-монополистическом капитализме</a>
+важным фактором усиления эксплуатации трудящихся является 
+рост налогов, а также инфляция, которые ведут к снижению 
+реальных доходов трудящихся.
+</p>
+<div class='vspace'></div><h2><a name='toc535' id='toc535'></a>285.3.&ensp;Противодействующая тенденция</h2>
+<p>Вместе с тем в современных условиях действует и тенденция к росту 
+стоимости рабочей силы (увеличиваются затраты на подготовку рабочей 
+силы, так как повышаются требования к уровню квалификации рабочего, 
+интенсификация труда предполагает рост затрат на воспроизводство 
+рабочей силы — питание, отдых и т. д.). Важнейшим фактором, 
+противодействующим повышению степени эксплуатации, является усиление 
+борьбы рабочего класса за улучшение своего положения, за повышение 
+заработной платы, за улучшение системы социального обслуживания и т. д. 
+В условиях общего кризиса капитализма капиталисты вынуждены идти на 
+уступки рабочему классу. Тем не менее это не отменяет того факта, 
+что степень эксплуатации имеет тенденцию к росту. 
+</p>
+<p class='vspace'>Усиление эксплуатации трудящихся в странах капитала разоблачает 
+утверждения апологетов капитализма о «революции» (или «уравнении») 
+доходов, о появлении «государства всеобщего благоденствия» и т. д., 
+призванные скрыть эксплуататорский характер капиталистического общества.
+</p>
+<div class='vspace'></div><h2><a name='toc536' id='toc536'></a>285.4.&ensp;Другие формы эксплуатации при капитализме</h2>
+<p>Хотя при капитализме основной формой эксплуатации является эксплуатация
+наёмного труда, при нём сохраняются и другие её формы. В течение
+длительного времени во многих капиталистических странах сохранялись
+полуфеодальные формы эксплуатации крестьянства (издольщина, испольщина).
+Ныне монополии эксплуатируют крестьян, мелких ремесленников путём
+неэквивалентного обмена. Господствуя на рынке, они скупают их продукцию по
+монопольно низким ценам, а продают им свои товары по монопольно высоким
+ценам.
+</p>
+<p class='vspace'>Этот же механизм использовался монополиями в колониальных и зависимых
+странах. На базе вывоза капитала, неэквивалентного обмена на мировом рынке
+при капитализме сложилась международная система эксплуатации, когда
+империалистические державы безвозмездно вывозили из других стран
+значительную часть их национального дохода. Распад колониальной системы
+капитализма, борьба развивающихся стран за свое экономическое освобождение
+подрывают механизм международной эксплуатации. 
+</p>
+<div class='vspace'></div><h1><a name='toc537' id='toc537'></a>286.&ensp;Историческая ограниченность эксплуатации</h1>
+<p>История всех эксплуататорских обществ отмечена борьбой эксплуатируемых
+против эксплуататоров — <a title='Классовая Борьба' class='createlinktext' href='Marksizm.KlassovajaBorqba?action=edit.html'>классовой борьбой</a>, ведущей
+к смене общественно-экономических формаций. Но ранее на смену одной
+формации, основанной на эксплуатации, приходила формация, основанная на
+другой, более развитой форме эксплуатации.
+</p>
+<p class='vspace'>Капитализм же является последним общественным строем, основанным на 
+эксплуатации. При капитализме достигается такой уровень развития 
+производительных сил, такой уровень производства прибавочного продукта, 
+который достаточен для освобождения <em>всех</em> людей от порабощения 
+силами природы, а значит, и для освобождения людей от порабощения другими 
+людьми, т. е. от эксплуатации.
+</p>
+<p class='vspace'>С установлением 
+<a title='Общественная Собственность' class='createlinktext' href='Marksizm.ObshhestvennajaSobstvennostq?action=edit.html'>общественной собственности на средства производства</a>
+происходит ликвидация эксплуататорских классов и устраняется 
+эксплуатация человека человеком. Происходит 
+<a class='wikilink' href='Marksizm.ZakonOtricanijaOtricanija.html' title='Закон отрицания отрицания'>отрицание отрицания</a>: 
+возвращение человека к свободе от порабощения человеком, но на новом 
+уровне развития, с сохранением <a class='wikilink' href='Marksizm.Svoboda.html' title='Свобода'>свободы</a> от порабощения природой, 
+достигнутом на предыдущем этапе развития.
+</p>
+<div class='vspace'></div><hr />
+<p>Разделы: <a class='categorylink' href='Category.Politehkonomija.html'>Политэкономия</a>, <a class='categorylink' href='Category.NauchnyjKommunizm.html'>Научный коммунизм</a>
+</p>
+<div class='vspace'></div><hr />
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+    </div><!-- id='content' -->
+<!--HTMLFooter-->
+  </div><!-- id='globalwrapper' -->
+
+
+</body>
+</html>

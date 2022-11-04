@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="ru">
+<!-- load/load.tmpl
+See PHP for credits and license
+-->
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <title>Власть</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="shortcut icon" href="serpo_kaj_martelo.gif" />
+  <link rel="icon" href="serpo_kaj_martelo.gif" />
+  <!--HTMLHeader--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: pre; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  
+span.anchor {
+    float: left;
+    font-size: 60%;
+    margin-left: -1em;
+    width: 1em;
+    position:relative; top:-0.1em;
+    text-align: center;
+}
+span.anchor a { text-decoration: none; }
+span.anchor a:hover { text-decoration: underline; }
+ol.toc { text-indent:-25px; list-style: none; margin-bottom:2px !important; margin-top:2px !important; }
+ol ol.toc { margin-left:-24px; text-indent:24px; }
+ol.toc li {text-align: left; }
+div.tocfloat { font-size: smaller; margin-bottom: 10px;
+    border-top: 1px dotted #555555; border-bottom: 1px dotted #555555;
+    padding-top: 5px;
+    width: 38%; float: right; margin-left: 10px; clear: right;
+    margin-right:-21px; padding-right: 13px; padding-left: 13px;
+    background-color: #eeeeee; }
+div.toc { font-size: smaller;
+    border: 1px dotted #cccccc;
+    background: #f7f7f7;
+    margin-bottom: 10px; }
+div.toc p { background-color: #f9f6d6;
+    padding: 5px;
+    border-bottom:  1px dotted #cccccc; }
+div.ref:target {
+  background-color: #B0D3EB;
+}
+div.ref {
+  margin: 0 !important;
+  padding: 0 !important;
+  border:  0 !important;
+  font-size: 85%;
+  text-align: left !important;
+}
+a.reflink {
+  vertical-align: baseline;
+  font-size: 0.8em;
+  position: relative;
+  top: -0.4em;
+}
+.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+  td.markup1 pre { white-space: pre-wrap; }
+  .noPmTOC, .PmTOCdiv:empty {display:none;}
+.PmTOCdiv { display: inline-block; font-size: 13px; overflow: auto; max-height: 500px;}
+.PmTOCdiv a { text-decoration: none;}
+.back-arrow {font-size: .9em; text-decoration: none;}
+#PmTOCchk + label {cursor: pointer;}
+#PmTOCchk {display: none;}
+#PmTOCchk:not(:checked) + label > .pmtoc-show {display: none;}
+#PmTOCchk:checked + label > .pmtoc-hide {display: none;}
+#PmTOCchk:checked + label + div {display: none;}table.sortable th { cursor: pointer; }
+table.sortable th::after { color: transparent; content: "\00A0\025B8"; }
+table.sortable th:hover::after { color: inherit; content: "\00A0\025B8"; }
+table.sortable th.dir-u::after { color: inherit; content: "\00A0\025BE"; }
+table.sortable th.dir-d::after { color: inherit; content: "\00A0\025B4"; } 
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none;}
+
+--></style>
+  <link href='commentboxplus.css' rel='stylesheet' type='text/css' /><script type="text/javascript">
+function toggle(obj, hide, show) {
+    var elstyle = document.getElementById(obj).style;
+    var text    = document.getElementById(obj + "tog");
+    if(!hide) { var hide = "скрыть"; }
+    if(!show) { var show = "показать"; }
+    if (elstyle.display == 'none') {
+        elstyle.display = 'block';
+        text.innerHTML  = hide;
+    } else {
+        elstyle.display = 'none';
+        text.innerHTML  = show;
+    }
+}
+</script>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='load.css' />
+
+  <!-- <link rel='stylesheet' href='load.css' type='text/css'/> -->
+
+
+</head>
+<body><a name='load_topofpage'></a>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbodycaption'></div>
+        <div class='pageleftbody' id='sidebar'>
+          
+<h1><a class='selflink' href='Marksizm.Marksizm.html' title='Энциклопедия марксизма'>Содержание</a></h1>
+<ul><li><a class='wikilink' href='Marksizm.KratkijObzor.html' title='Краткий обзор марксизма'>Марксизм: краткий обзор</a>
+</li><li><a class='wikilink' href='Category.Razdely.html' title='Разделы'>Основные разделы</a> <div class='fpltemplate'><ul  style='text-align: left;'><li  style='text-align: left;'> <a class='wikilink' href='Category.Neokonchennoe.html' title='&#39;&#39;Неоконченное&#39;&#39;'><em>Неоконченное</em></a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Avtoram.html' title='Авторам'>Авторам</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Istorija.html' title='История'>История</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.NauchnyjKommunizm.html' title='Научный коммунизм'>Научный коммунизм</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.OProizvedenijax.html' title='О произведениях'>О произведениях</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Personalii.html' title='Персоналии'>Персоналии</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politika.html' title='Политика'>Политика</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politehkonomija.html' title='Политэкономия'>Политэкономия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Filosofija.html' title='Философия'>Философия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Ehkonomika.html' title='Экономика'>Экономика</a>
+</li></ul>
+</div>
+</li></ul><hr />
+<ul><li><a class='urllink' href='/wiki/staticload.php' rel='nofollow'>Скачать</a>
+</li></ul><hr />
+<ul><li><a class='wikilink' href='Marksizm.RecentChanges.html' title='Последние изменения'>Последние изменения</a>
+</li></ul>
+        </div><!-- id='sidebar' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url(logo.gif);'
+           href='index.htm' title="Энциклопедия марксизма"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+          <!--PageTitleFmt--><h1 class='titlepage'>Власть</h1><!--/PageTitleFmt-->
+          <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p class='vspace'>Власть &mdash; в общем смысле способность и возможность осуществлять свою волю, оказывать определяющее воздействие на деятельность, поведение людей с помощью какого-либо средства &mdash; авторитета, права, насилия (экономическая, политическая, государственная, семейная и др.). 
+</p>
+<p class='vspace'>Власть появилась с возникновением человеческого общества и будет в той или иной форме всегда сопутствовать его развитию. Власть необходима прежде всего для организации общественного <a class='wikilink' href='Marksizm.Proizvodstvo.html' title='Производство'>производства</a>, которое немыслимо без подчинения всех участников единой воле, а также для регулирования других взаимоотношений между людьми, связанных с жизнью в обществе. 
+</p>
+<p class='vspace'>До возникновения классов и государства не было постоянно действующего аппарата, стоящего над обществом, особых, принудительных учреждений. В <a class='wikilink' href='Marksizm.PervobytnoobshhinnyjStroj.html' title='Первобытнообщинный строй'>первобытном родовом обществе</a> власть осуществлялась всеми членами рода (племени), которые избирали старейшину. С появлением <a class='wikilink' href='Marksizm.Klassy.html' title='Классы'>классов</a> и <a class='wikilink' href='Marksizm.Gosudarstvo.html' title='Государство'>государства</a> кровные, родовые связи были разрушены, вместо морального авторитета старейшины рода возник авторитет <em>публичной власти</em> (см. ниже), которая отделилась от общества и стала над ним, избавившись от непосредственного контроля с его стороны.
+</p>
+<p class='vspace'>Наиболее важным видом власти является <em>политическая власть</em> (или  <em>публичная власть</em>), т. е. реальная способность данного класса, группы, индивида проводить свою волю в политике и <a title='Право' class='createlinktext' href='Marksizm.Pravo?action=edit.html'>правовых нормах</a>; она характеризуется социальным господством и руководством тех или иных классов. Основные функции политической власти &mdash; подчинение (в том числе подавление сопротивления других классов), организация общества, управление им в соответствии с экономическими, политическими и духовными интересами этого класса. В классово антагонистическом обществе политическая власть по сути своей &mdash; диктатура господствующего класса, орудие эксплуатации трудящихся. Аппарат публичной власти состоит из вооружённых сил, разведки, органов управления, дипломатической службы и т. д. Публичная власть эксплуататорских государств, политически и организационно отчуждённая от общества, содержится за счёт трудящихся: налоги и займы — материальная основа и признак публичной власти. (Аппарат политической власти также не вполне верно смешивают с <em>исполнительной властью</em> &mdash; в буржуазной теории государственного права это самостоятельная власть, наделённая определёнными функциями, противостоящая законодательной и судебной властям. Согласно буржуазным конституционным теориям, единственная функция исполнительной власти &mdash; исполнение законов, принимаемых органом законодательной власти &mdash; парламентом).
+</p>
+<p class='vspace'>Власть &mdash; одно из основных понятий политической науки и практики. Ленин писал, что коренной вопрос всякой <a class='wikilink' href='Marksizm.Revoljucija.html' title='Революция социальная'>революции</a> &mdash; вопрос о власти в государстве <a class="reflink" name="back1" href="#ref1" title="В. И. Ленин. Исчезло ли двоевластие?. ПСС, изд. 5,  т. 32, с. 127.">[1]</a>. Государственная власть может добиваться своих целей различными средствами &mdash; идеологическим воздействием, экономическим стимулированием и иными косвенными способами, но только она обладает монополией на принуждение с помощью специального аппарата в отношении всех членов общества.
+</p>
+<p class='vspace'>К основным формам проявления власти относятся господство, руководство, <a class='wikilink' href='Marksizm.Upravlenie.html' title='Управление'>управление</a>, организация, контроль. В антагонистическом обществе главной характеристикой власти являются отношения господства и подчинения, в коммунистическом обществе на смену им приходят отношения, основанные на убеждении, руководстве, влиянии, контроле. При переходе к коммунизму отмирает основной институт политической власти &mdash; государство, однако сохраняются руководство и управление, которые будут осуществляться всем обществом.
+</p>
+<div class='vspace'></div><div class='frame'><div><b> Литература</b></div>
+<div class="ref" id="ref1"><a class="reflink" href="#back1">[1]</a>&nbsp; В. И. Ленин. Исчезло ли двоевластие?<small>. ПСС, изд. 5,  <a target='_blank'  class='urllink' href='http://uaio.ru/vil/32.htm#s127' rel='nofollow'>т. 32, с. 127</a></small>. </div>
+</div>
+
+<div class='vspace'></div><hr />
+<p>Разделы: <a class='categorylink' href='Category.NauchnyjKommunizm.html'>Научный коммунизм</a> <a class='categorylink' href='Category.Filosofija.html'>Философия</a>
+</p>
+<div class='vspace'></div><hr />
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+    </div><!-- id='content' -->
+<!--HTMLFooter-->
+  </div><!-- id='globalwrapper' -->
+
+
+</body>
+</html>

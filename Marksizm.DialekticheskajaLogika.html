@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="ru">
+<!-- load/load.tmpl
+See PHP for credits and license
+-->
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <title>Диалектическая логика</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="shortcut icon" href="serpo_kaj_martelo.gif" />
+  <link rel="icon" href="serpo_kaj_martelo.gif" />
+  <!--HTMLHeader--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: pre; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  
+span.anchor {
+    float: left;
+    font-size: 60%;
+    margin-left: -1em;
+    width: 1em;
+    position:relative; top:-0.1em;
+    text-align: center;
+}
+span.anchor a { text-decoration: none; }
+span.anchor a:hover { text-decoration: underline; }
+ol.toc { text-indent:-25px; list-style: none; margin-bottom:2px !important; margin-top:2px !important; }
+ol ol.toc { margin-left:-24px; text-indent:24px; }
+ol.toc li {text-align: left; }
+div.tocfloat { font-size: smaller; margin-bottom: 10px;
+    border-top: 1px dotted #555555; border-bottom: 1px dotted #555555;
+    padding-top: 5px;
+    width: 38%; float: right; margin-left: 10px; clear: right;
+    margin-right:-21px; padding-right: 13px; padding-left: 13px;
+    background-color: #eeeeee; }
+div.toc { font-size: smaller;
+    border: 1px dotted #cccccc;
+    background: #f7f7f7;
+    margin-bottom: 10px; }
+div.toc p { background-color: #f9f6d6;
+    padding: 5px;
+    border-bottom:  1px dotted #cccccc; }
+div.ref:target {
+  background-color: #B0D3EB;
+}
+div.ref {
+  margin: 0 !important;
+  padding: 0 !important;
+  border:  0 !important;
+  font-size: 85%;
+  text-align: left !important;
+}
+a.reflink {
+  vertical-align: baseline;
+  font-size: 0.8em;
+  position: relative;
+  top: -0.4em;
+}
+.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+  td.markup1 pre { white-space: pre-wrap; }
+  .noPmTOC, .PmTOCdiv:empty {display:none;}
+.PmTOCdiv { display: inline-block; font-size: 13px; overflow: auto; max-height: 500px;}
+.PmTOCdiv a { text-decoration: none;}
+.back-arrow {font-size: .9em; text-decoration: none;}
+#PmTOCchk + label {cursor: pointer;}
+#PmTOCchk {display: none;}
+#PmTOCchk:not(:checked) + label > .pmtoc-show {display: none;}
+#PmTOCchk:checked + label > .pmtoc-hide {display: none;}
+#PmTOCchk:checked + label + div {display: none;}table.sortable th { cursor: pointer; }
+table.sortable th::after { color: transparent; content: "\00A0\025B8"; }
+table.sortable th:hover::after { color: inherit; content: "\00A0\025B8"; }
+table.sortable th.dir-u::after { color: inherit; content: "\00A0\025BE"; }
+table.sortable th.dir-d::after { color: inherit; content: "\00A0\025B4"; } 
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none;}
+
+--></style>
+  <link href='commentboxplus.css' rel='stylesheet' type='text/css' /><script type="text/javascript">
+function toggle(obj, hide, show) {
+    var elstyle = document.getElementById(obj).style;
+    var text    = document.getElementById(obj + "tog");
+    if(!hide) { var hide = "скрыть"; }
+    if(!show) { var show = "показать"; }
+    if (elstyle.display == 'none') {
+        elstyle.display = 'block';
+        text.innerHTML  = hide;
+    } else {
+        elstyle.display = 'none';
+        text.innerHTML  = show;
+    }
+}
+</script>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='load.css' />
+
+  <!-- <link rel='stylesheet' href='load.css' type='text/css'/> -->
+
+
+</head>
+<body><a name='load_topofpage'></a>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbodycaption'></div>
+        <div class='pageleftbody' id='sidebar'>
+          
+<h1><a class='selflink' href='Marksizm.Marksizm.html' title='Энциклопедия марксизма'>Содержание</a></h1>
+<ul><li><a class='wikilink' href='Marksizm.KratkijObzor.html' title='Краткий обзор марксизма'>Марксизм: краткий обзор</a>
+</li><li><a class='wikilink' href='Category.Razdely.html' title='Разделы'>Основные разделы</a> <div class='fpltemplate'><ul  style='text-align: left;'><li  style='text-align: left;'> <a class='wikilink' href='Category.Neokonchennoe.html' title='&#39;&#39;Неоконченное&#39;&#39;'><em>Неоконченное</em></a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Avtoram.html' title='Авторам'>Авторам</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Istorija.html' title='История'>История</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.NauchnyjKommunizm.html' title='Научный коммунизм'>Научный коммунизм</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.OProizvedenijax.html' title='О произведениях'>О произведениях</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Personalii.html' title='Персоналии'>Персоналии</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politika.html' title='Политика'>Политика</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politehkonomija.html' title='Политэкономия'>Политэкономия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Filosofija.html' title='Философия'>Философия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Ehkonomika.html' title='Экономика'>Экономика</a>
+</li></ul>
+</div>
+</li></ul><hr />
+<ul><li><a class='urllink' href='/wiki/staticload.php' rel='nofollow'>Скачать</a>
+</li></ul><hr />
+<ul><li><a class='wikilink' href='Marksizm.RecentChanges.html' title='Последние изменения'>Последние изменения</a>
+</li></ul>
+        </div><!-- id='sidebar' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url(logo.gif);'
+           href='index.htm' title="Энциклопедия марксизма"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+          <!--PageTitleFmt--><h1 class='titlepage'>Диалектическая логика</h1><!--/PageTitleFmt-->
+          <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p class='vspace'>Диалектическая логика &mdash; логическое учение <a class='wikilink' href='Marksizm.DialekticheskijMaterializm.html' title='Диалектический материализм'>диалектического материализма</a>, наука о законах и формах отражения в мышлении развития объективного мира, о закономерностях познания истины.
+</p>
+<p class='vspace'>Диалектическая логика в своём научном выражении возникла как составная часть марксистской философии. Однако её элементы имели место уже в древней, особенно античной, философии, в учениях <a title='Гераклит' class='createlinktext' href='Marksizm.Geraklit?action=edit.html'>Гераклита</a>, <a title='Платон' class='createlinktext' href='Marksizm.Platon?action=edit.html'>Платона</a>, <a title='Аристотель' class='createlinktext' href='Marksizm.Aristotelq?action=edit.html'>Аристотеля</a> и др. В силу исторических обстоятельств в течение длительного периода господствовала <a title='Формальная Логика' class='createlinktext' href='Marksizm.FormalqnajaLogika?action=edit.html'>формальная логика</a> как единственное учение о законах и формах мышления. Но уже примерно с 17 в. под давлением потребностей развивающегося естествознания в философской мысли начинает сознаваться её недостаточность, необходимость нового учения о всеобщих принципах и методах мышления и познания (<a title='Бэкон' class='createlinktext' href='Marksizm.Behkon?action=edit.html'>Ф. Бэкон</a>, <a title='Декарт' class='createlinktext' href='Marksizm.Dekart?action=edit.html'>Декарт</a>, <a title='Лейбниц' class='createlinktext' href='Marksizm.Lejbnic?action=edit.html'>Лейбниц</a> и др.). Наиболее яркое выражение эта тенденция в новое время получила в <a title='Немецкая Классическая Философия' class='createlinktext' href='Marksizm.NemeckajaKlassicheskajaFilosofija?action=edit.html'>немецкой классической философии</a>. Так, <a title='Кант' class='createlinktext' href='Marksizm.Kant?action=edit.html'>Кант</a> проводил различие между общей и трансцедентальной логикой; последняя, на его взгляд, отличается от первой, т. е. формальной, тем, что она изучает развитие знаний и не отвлекается, подобно ей, от содержания. Особая заслуга в разработке диалектической логики принадлежит <a title='Гегель' class='createlinktext' href='Marksizm.Gegelq?action=edit.html'>Гегелю</a>, давшему её первую всесторонне разработанную систему, проникнутую, однако, идеалистическим взглядом на мир.
+</p>
+<p class='vspace'>Марксистское учение о логике вобрало в себя всё ценное из предыдущего, переработав огромный опыт развития человеческого сознания и обобщив его в строгую науку о познании. Диалектическая логика не отвергает формальную логику, а позволяет уточнить её границы, место и роль в изучении законов и форм мышления. Если формальная логика есть наука о законах и формах отражения в мышлении постоянства, покоя в объективном мире, то специфика диалектической логики &mdash; изучение отражения в законах и формах мышления процессов <a class='wikilink' href='Marksizm.Razvitie.html' title='Развитие'>развития</a>, внутренних <a class='wikilink' href='Marksizm.Protivorechie.html' title='Противоречие'>противоречий</a> явлений, их качественного изменения, перехода одного в другое и т. д. 
+</p>
+<p class='vspace'>Предмет исследования диалектической логики — творчески познающее мышление (в его поисковой деятельности и развитии через преодоление постоянно возникающих противоречий); его логические структуры и соотношения их элементов — понятий, суждений, теорий; прогнозирующая функция мышления. Диалектическая логика изучает принципы и закономерности формирования, изменения и развития знания, средства и методы их получения и проверки. Диалектическое исследование мышления предполагает анализ его возникновения и истории развития в результате обобщения истории материальной в духовной культуры. Диалектическая логика изучает всю систему категорий в их гносеологических и логических функциях, а также специфические познавательные категории, принципы и процедуры (например, восхождение от чувственно-конкретного к абстрактному, переход от абстрактного к понятийно-конкретному, соотношение эмпирического и теоретического, приёмы обобщения, идеализации, анализа и синтеза, индукции и дедукции и др.). Следовательно, диалектическая логика изучает не только принципы и категории, равным образом действующие в природе, истории и мышлении, но и такие, которые присущи лишь процессу познания, мышления. Одной из характерных особенностей диалектической логики является то, что она исследует переходы от одной системы знания к другой, более высокой. При этом неизбежно выявляются диалектические противоречия, отражающие как противоречия в самом объекте познания, так и противоречия взаимодействия субъекта и объекта познания, а также противоречивость в самом процессе познания. Особенно острую форму они приобретают на «границах» такой теории, которая исчерпала свои объяснительные возможности, и требуется переход к новой. Этот переход предполагает разрешение противоречий между старой теорией и новой системой фактов. Такое разрешение противоречий не является формализуемой процедурой. Допуская определённую типологию разрешения противоречий, диалектическая логика не определяет однозначно результат разрешения: здесь происходит изменение содержания знания.
+</p>
+<p class='vspace'>Диалектическая логика возможна как наука лишь на основе диалектико-материалистического метода, и в вместе с тем она служит как бы его конкретизацией, изучая законы и формы отражения в мышлении, проявления бесконечности движения в конечном, единства бесконечности и конечности в движении, внутреннего и внешнего и т. п. Центральная задача диалектической логики &mdash; исследование того, как выразить в понятиях проявления действия законов диалектики в вещах, предметах и т. п. С этим связана другая основная задача диалектической логики &mdash; изучение развития самого мышления. Диалектическая логика выделяет законы и формы развития мышления в ходе развития познания и исторической общественной практики человечества. В качестве общего логического принципа диалектическая логика использует способ восхождения от абстрактного к конкретному (см. <a class='wikilink' href='Marksizm.AbstraktnoeIKonkretnoe.html' title='Абстрактное и конкретное'>Абстрактное и конкретное</a>). Другой общий принцип диалектической логики &mdash; единство <a class='wikilink' href='Marksizm.IstoricheskoeILogicheskoe.html' title='Историческое и логическое'>исторического и логического</a>. Оба принципа внутренне взаимосвязаны, взаимопроникают друг в друга. Диалектическая логика по самому своему существу должна представлять собой систему логических категорий, которая выступает как синтез результатов познавательной и практической деятельности человечества (пример такой системы &mdash; <a title='_Капитал_' class='createlinktext' href='Marksizm._Kapital_?action=edit.html'>«Капитал»</a> Маркса). Лишь во взаимосвязи, т. е. в системе логических категорий, можно отобразить развитие в мышлении и понять развитие самого мышления. Мышление переходит от поверхности предметов, вещей вглубь, к их сущности, и затем постигает и её действительные проявления. При логическом рассмотрении процесс, явление, сторона и т. п. берутся в их развитом, зрелом виде, и это помогает понять как прошлое, существующее в снятом виде в настоящем, так и будущее, поскольку оно уже имеется в настоящем, правда в неразвившемся, зародышевом виде. Таким образом, исследуя отражение в законах и формах мышления процессов развития, диалектическая логика исследует и развитие мышления, система её категорий изменяется по мере исторического развития познания и практики человечества.
+</p>
+<p class='vspace'>Вопрос о системе категорий, в которой последние берутся в порядке субординации, соподчинения, ещё не изучен достаточно, но наиболее вероятным и плодотворным представляется подход, соответствующий принципу единства логического и исторического, движения знаний от явлений к сущности, от простого к сложному и т. д. На эту сторону обращал внимание Ленин, внёсший огромный вклад в разработку диалектической логики.
+</p>
+<p class='vspace'>В современной науке большую роль играют формализованные логические системы и содержательные формально-логические теории, изучающие отдельные стороны и задачи мышления. Диалектическая логика есть тот общий логический базис человеческого познания, та общая логическая теория, с позиций которой можно и должно объяснять все частные и конкретные логические теории, их значение и роль.
+</p>
+<div class='vspace'></div><hr />
+<p>Разделы: <a class='categorylink' href='Category.Filosofija.html'>Философия</a>, <a class='categorylink' href='Category.DialekticheskijMaterializm.html'>Диалектический материализм</a>
+</p>
+<div class='vspace'></div><hr />
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+    </div><!-- id='content' -->
+<!--HTMLFooter-->
+  </div><!-- id='globalwrapper' -->
+
+
+</body>
+</html>

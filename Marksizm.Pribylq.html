@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="ru">
+<!-- load/load.tmpl
+See PHP for credits and license
+-->
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <title>Прибыль</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="shortcut icon" href="serpo_kaj_martelo.gif" />
+  <link rel="icon" href="serpo_kaj_martelo.gif" />
+  <!--HTMLHeader--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: pre; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  
+span.anchor {
+    float: left;
+    font-size: 60%;
+    margin-left: -1em;
+    width: 1em;
+    position:relative; top:-0.1em;
+    text-align: center;
+}
+span.anchor a { text-decoration: none; }
+span.anchor a:hover { text-decoration: underline; }
+ol.toc { text-indent:-25px; list-style: none; margin-bottom:2px !important; margin-top:2px !important; }
+ol ol.toc { margin-left:-24px; text-indent:24px; }
+ol.toc li {text-align: left; }
+div.tocfloat { font-size: smaller; margin-bottom: 10px;
+    border-top: 1px dotted #555555; border-bottom: 1px dotted #555555;
+    padding-top: 5px;
+    width: 38%; float: right; margin-left: 10px; clear: right;
+    margin-right:-21px; padding-right: 13px; padding-left: 13px;
+    background-color: #eeeeee; }
+div.toc { font-size: smaller;
+    border: 1px dotted #cccccc;
+    background: #f7f7f7;
+    margin-bottom: 10px; }
+div.toc p { background-color: #f9f6d6;
+    padding: 5px;
+    border-bottom:  1px dotted #cccccc; }
+div.ref:target {
+  background-color: #B0D3EB;
+}
+div.ref {
+  margin: 0 !important;
+  padding: 0 !important;
+  border:  0 !important;
+  font-size: 85%;
+  text-align: left !important;
+}
+a.reflink {
+  vertical-align: baseline;
+  font-size: 0.8em;
+  position: relative;
+  top: -0.4em;
+}
+.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+  td.markup1 pre { white-space: pre-wrap; }
+  .noPmTOC, .PmTOCdiv:empty {display:none;}
+.PmTOCdiv { display: inline-block; font-size: 13px; overflow: auto; max-height: 500px;}
+.PmTOCdiv a { text-decoration: none;}
+.back-arrow {font-size: .9em; text-decoration: none;}
+#PmTOCchk + label {cursor: pointer;}
+#PmTOCchk {display: none;}
+#PmTOCchk:not(:checked) + label > .pmtoc-show {display: none;}
+#PmTOCchk:checked + label > .pmtoc-hide {display: none;}
+#PmTOCchk:checked + label + div {display: none;}table.sortable th { cursor: pointer; }
+table.sortable th::after { color: transparent; content: "\00A0\025B8"; }
+table.sortable th:hover::after { color: inherit; content: "\00A0\025B8"; }
+table.sortable th.dir-u::after { color: inherit; content: "\00A0\025BE"; }
+table.sortable th.dir-d::after { color: inherit; content: "\00A0\025B4"; } 
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none;}
+
+--></style>
+  <link href='commentboxplus.css' rel='stylesheet' type='text/css' /><script type="text/javascript">
+function toggle(obj, hide, show) {
+    var elstyle = document.getElementById(obj).style;
+    var text    = document.getElementById(obj + "tog");
+    if(!hide) { var hide = "скрыть"; }
+    if(!show) { var show = "показать"; }
+    if (elstyle.display == 'none') {
+        elstyle.display = 'block';
+        text.innerHTML  = hide;
+    } else {
+        elstyle.display = 'none';
+        text.innerHTML  = show;
+    }
+}
+</script>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='load.css' />
+
+  <!-- <link rel='stylesheet' href='load.css' type='text/css'/> -->
+
+
+</head>
+<body><a name='load_topofpage'></a>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbodycaption'></div>
+        <div class='pageleftbody' id='sidebar'>
+          
+<h1><a class='selflink' href='Marksizm.Marksizm.html' title='Энциклопедия марксизма'>Содержание</a></h1>
+<ul><li><a class='wikilink' href='Marksizm.KratkijObzor.html' title='Краткий обзор марксизма'>Марксизм: краткий обзор</a>
+</li><li><a class='wikilink' href='Category.Razdely.html' title='Разделы'>Основные разделы</a> <div class='fpltemplate'><ul  style='text-align: left;'><li  style='text-align: left;'> <a class='wikilink' href='Category.Neokonchennoe.html' title='&#39;&#39;Неоконченное&#39;&#39;'><em>Неоконченное</em></a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Avtoram.html' title='Авторам'>Авторам</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Istorija.html' title='История'>История</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.NauchnyjKommunizm.html' title='Научный коммунизм'>Научный коммунизм</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.OProizvedenijax.html' title='О произведениях'>О произведениях</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Personalii.html' title='Персоналии'>Персоналии</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politika.html' title='Политика'>Политика</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politehkonomija.html' title='Политэкономия'>Политэкономия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Filosofija.html' title='Философия'>Философия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Ehkonomika.html' title='Экономика'>Экономика</a>
+</li></ul>
+</div>
+</li></ul><hr />
+<ul><li><a class='urllink' href='/wiki/staticload.php' rel='nofollow'>Скачать</a>
+</li></ul><hr />
+<ul><li><a class='wikilink' href='Marksizm.RecentChanges.html' title='Последние изменения'>Последние изменения</a>
+</li></ul>
+        </div><!-- id='sidebar' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url(logo.gif);'
+           href='index.htm' title="Энциклопедия марксизма"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+          <!--PageTitleFmt--><h1 class='titlepage'>Прибыль</h1><!--/PageTitleFmt-->
+          <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p class='vspace'>Прибыль &mdash; экономическая категория, характеризующая конечные финансовые результаты хозяйственной деятельности в процессе расширенного воспроизводства. Категория прибыли при <a class='wikilink' href='Marksizm.Kapitalizm.html' title='Капитализм'>капитализме</a> выступает как превращённая форма <a class='wikilink' href='Marksizm.PribavochnajaStoimostq.html' title='Прибавочная стоимость'>прибавочной стоимости</a>, в которой воплощён безвозмездно присвоенный капиталистом неоплаченный труд наёмных рабочих.
+</p>
+<div class='vspace'></div><div class='toc'><p><a name='toc' id='toc'></a><b>Содержание</b> (<a id="tocidtog" href="javascript:toggle('tocid');">скрыть</a>)</p><ol class='toc' id='tocid'><li>&nbsp;&nbsp;1.&nbsp;&nbsp;<a href='#toc1'>Превращение прибавочной стоимости в прибыль</a><ol class='toc'><li>&nbsp;&nbsp;1.1.&nbsp;&nbsp;<a href='#toc2'>Издержки производства и прибыль</a>
+</li><li>&nbsp;&nbsp;1.2.&nbsp;&nbsp;<a href='#toc3'>Прибыль &mdash; превращённая форма прибавочной стоимости</a></li></ol>
+</li><li>&nbsp;&nbsp;2.&nbsp;&nbsp;<a href='#profit_rate'>Норма прибыли</a><ol class='toc'><li>&nbsp;&nbsp;2.1.&nbsp;&nbsp;<a href='#toc4'>Факторы, определяющие норму прибыли</a></li></ol>
+</li><li>&nbsp;&nbsp;3.&nbsp;&nbsp;<a href='#toc5'>Несостоятельность буржуазных теорий прибыли</a><ol class='toc'><li>&nbsp;&nbsp;3.1.&nbsp;&nbsp;<a href='#toc6'>Меркантилисты</a>
+</li><li>&nbsp;&nbsp;3.2.&nbsp;&nbsp;<a href='#toc7'>Физиократы</a>
+</li><li>&nbsp;&nbsp;3.3.&nbsp;&nbsp;<a href='#toc8'>Вульгарная политическая экономия начала XIX в.</a>
+</li><li>&nbsp;&nbsp;3.4.&nbsp;&nbsp;<a href='#toc9'>Вульгарная политическая экономия второй половины XIX в.</a></li></ol></li></ol></div>
+<div class='vspace'></div><h1><a name='toc347' id='toc347'></a>184.&ensp;Превращение прибавочной стоимости в прибыль</h1>
+<h2><a name='toc348' id='toc348'></a>184.1.&ensp;Издержки производства и прибыль</h2>
+<div class='img imgonly'><span class='frame rfloat'> <img src='Marksizm/Pribylq/cvm.png' alt='' /></span></div>
+<p class='vspace'><a class='wikilink' href='Marksizm.Stoimostq.html' title='Стоимость'>Стоимость</a> капиталистически произведённого товара выражается формулой <em>c + v + m</em> (где <em>c</em> &mdash; стоимость постоянного капитала, потреблённого в процессе производства товара и перенесённая на товар, <em>v</em> &mdash; стоимость переменного капитала (рабочей силы), <em>m</em> &mdash; прибавочная стоимость). С точки зрения <em>создания стоимости</em> между <em>c</em>, с одной стороны, и <em>v + m</em> — с другой, есть принципиальная разница: <em>c</em> — это стоимость потреблённых средств производства, существовавшая до процесса производства данного товара, a <em>v</em> и <em>m</em> — стоимость, <em>вновь</em> созданная в этом процессе.  Следовательно, с точки зрения создания стоимости формула <em>c + v + m</em> может быть преобразована в формулу <em>c + (v + m)</em>, показывающую, что <em>стоимость товара состоит из старой и новой стоимости</em>.
+</p>
+<p class='vspace'>Однако если подойти к составным частям стоимости товара с точки зрения возрастания <a class='wikilink' href='Marksizm.Kapital.html' title='Капитал'>капитала</a> (а это вполне правомерное направление анализа, поскольку капитал есть самовозрастающая стоимость), то они предстанут в совершенно ином свете. Хотя <em>v</em> и <em>m</em> составляют части новой стоимости, только <em>m</em> является приростом, величина же <em>v</em> была <em>авансирована капиталистом</em>. С точки зрения капиталиста, между <em>v</em> и <em>c</em> нет различий, ибо обе эти величины были им авансированы. В стоимости товара они представляют израсходованный, потреблённый капитал, имевшийся в руках капиталиста <em>до начала</em> процесса производства. Следовательно, <em>c</em> и <em>v</em> на самом деле, а не только в представлении капиталиста имеют нечто общее, отличное от <em>m</em>. В сумме
+<em>c + v + m</em> первые два слагаемых объективно представляют собой одно целое: это то, чего товар сто&#769;ит капиталисту и что измеряется затратой капитала. Это — капиталистические <em>издержки производства</em> товара; <em>m</em> же есть избыток, излишек над капиталистическими издержками производства. «То, чего стоит товар капиталистам, — писал К. Маркс, — измеряется затратой <em>капитала</em>; то, чего товар действительно стоит, — затратой <em>труда</em>» <a class="reflink" name="back1" href="#ref1" title="К. Маркс (под редакцией Ф. Энгельса).  Капитал. Критика политической экономии. Том третий. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 25, ч. 1, с. 30.">[1]</a>. С этой точки зрения формула стоимости может быть преобразована к виду <em>(c + v) + m</em>.
+</p>
+<p class='vspace'>Издержки производства стирают грани между постоянным и переменным капиталом и тем самым <em>маскируют <a class='wikilink' href='Marksizm.Ehkspluatacija.html' title='Эксплуатация'>эксплуатацию</a> наёмного труда</em>. Они скрывают, что единственный источник стоимости и прибавочной стоимости — это <a class='wikilink' href='Marksizm.Trud.html' title='Труд'>труд</a>. Прибавочная стоимость выступает как избыток над всеми элементами издержек производства, как порождение всего авансированного капитала. «Прибавочная стоимость, представленная как порождение всего авансированного капитала, приобретает <a class='wikilink' href='Marksizm.PrevrashhjonnajaForma.html' title='Превращённая форма'>превращённую форму</a> <em>прибыли</em>» <a class="reflink" name="back2" href="#ref2" title="К. Маркс (под редакцией Ф. Энгельса).  Капитал. Критика политической экономии. Том третий. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 25, ч. 1, с. 43.">[2]</a>.
+</p>
+<div class='vspace'></div><h2><a name='toc349' id='toc349'></a>184.2.&ensp;Прибыль &mdash; превращённая форма прибавочной стоимости</h2>
+<p>Маркс особо подчёркивал, что в условиях капитализма прибыль «&hellip; есть то же самое, что и прибавочная стоимость, но только в мистифицированной форме, которая, однако, необходимо возникает из капиталистического способа производства» <a class="reflink" name="back3" href="#ref3" title="К. Маркс (под редакцией Ф. Энгельса).  Капитал. Критика политической экономии. Том третий. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 25, ч. 1, с. 44.">[3]</a>. В письме Энгельсу от 30 апреля 1868 Маркс писал: «Прибыль для нас прежде всего лишь другое название или другая категория для прибавочной стоимости. Так как благодаря форме заработной платы весь труд выступает как оплаченный, то неизбежно кажется, что неоплаченная часть его возникает не из труда, а из капитала, и притом не из переменной части его, а из всего капитала в целом. Вследствие этого прибавочная стоимость приобретает форму прибыли, — без количественного различия между той и другой. Это лишь иллюзорная форма проявления прибавочной стоимости» <a class="reflink" name="back4" href="#ref4" title="К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 32, с. 60.">[4]</a>.
+</p>
+<p class='vspace'>Фактически прибыль промышленного капитала представляет собой не что иное, как <em>превращённую форму прибавочной стоимости, продукт переменного капитала</em>. Суть превращения заключается в том, что <em>прибавочная стоимость в форме прибыли предстает как порождение всего капитала</em> (переменного и постоянного) и всех фаз его движения (как процесса производства, так и процесса обращения).
+</p>
+<p class='vspace'>Иначе говоря, прибыль представляет собой такую объективно обусловленную форму внешнего проявления прибавочной стоимости, которая искажает её действительную сущность и вместе с тем сущность капиталистических отношений, маскируя тот факт, что единственным источником обогащения класса капиталистов является наёмный труд пролетариев.
+</p>
+<p class='vspace'>Распадение стоимости товара на издержки производства и прибыль свойственно только капиталистической форме товарного производства. Оно неприложимо к простому товарному хозяйству, где непосредственный производитель осуществляет процесс труда собственными средствами производства. У простого товаропроизводителя <em>стоимость и издержки производства совпадают</em>. Можно, конечно, и здесь выделить стоимость средств производства и рассматривать их как издержки производства. Но для простого товаропроизводителя нет никакого различия между частями вновь созданной стоимости. Все части вновь созданной стоимости — суть воплощение его собственного труда. Отношения простого товарного производства не дают оснований для выделения прибыли как особой части стоимости товара.
+</p>
+<p class='vspace'>Для капиталиста же существует качественное различие между разными составными частями стоимости товара, поскольку издержки производства он оплачивает, а прибавочную стоимость получает безвозмездно. Это принципиальное различие вытекает из самой сути капиталистических отношений производства.
+</p>
+<div class='vspace'></div><div class='small' style='font-size: 90%;' > 
+<p>Постепенно категории капитализма в условиях буржуазного общества становятся привычными и для простого товаропроизводителя. Он начинает применять к своему хозяйству капиталистические мерки (заработную плату, прибыль и т. д.), вообще говоря, чуждые внутренней природе такого хозяйства. Однако в связи с тем, что капиталистическая форма производства является господствующей и простое товарное производство существует лишь как <a class='wikilink' href='Marksizm.Uklad.html' title='Уклад'>уклад</a>, зависимый от господствующих капиталистических отношений, такие мерки приобретают реальное содержание. Например, размер затрат простого товаропроизводителя на производство товара нередко бывает таков, что сумма, остающаяся после вычета из реализованной цены его продукта стоимости потреблённых средств производства, оказывается меньше обычной заработной платы. Отсюда следует вполне реалистический вывод о том, что товаропроизводитель оказывается в худшем материальном положении, чем наёмный рабочий.
+</p></div>
+<p class='vspace'>Целью движения капитала является возрастание стоимости — прибавочная стоимость. При рассмотрении капитала в том виде, в каком он выступает непосредственно <em>на поверхности явлений</em>, обнаруживается, что <em>в качестве движущего мотива капиталистического производства выступает прибыль</em>.
+</p>
+<div class='vspace'></div><h1><a name='profit_rate' id='profit_rate'></a>185.&ensp;Норма прибыли</h1>
+<p>Из самой природы прибыли как превращённой формы прибавочной стоимости
+вытекает, что её количественное выражение должно отличаться от
+количественных выражений прибавочной стоимости. Это сказывается прежде
+всего в <em>отличии нормы прибыли от нормы прибавочной стоимости</em>.
+</p>
+<p class='vspace'>Поскольку прибыль представляется порождением всего капитала, её норма 
+определяется отношением прибавочной стоимости (обычно годовой массы) ко 
+<em>всему</em> авансированному капиталу (<em>p’ = m/(c+v)</em>), между тем 
+как норма прибавочной стоимости есть отношение прибавочной стоимости к 
+переменному капиталу (<em>m’ = m/v</em>). Если норма прибавочной стоимости 
+характеризует степень возрастания переменного капитала, то норма 
+прибыли показывает <em>степень возрастания всего капитала</em>, доходность 
+капиталистического предприятия.
+</p>
+<p class='vspace'>Норма прибыли — превращённая форма нормы прибавочной стоимости. Она
+маскирует капиталистическую эксплуатацию, поскольку прибыль
+представляется как порождение всего авансированного капитала, а не
+переменного. «Так как в норме прибыли прибавочная стоимость исчисляется
+на весь капитал и относится к этому последнему как к своей мере, —
+писал К. Маркс, — то вследствие этого кажется, будто сама прибавочная
+стоимость возникла из всего капитала, и притом равномерно из всех его
+частей, и таким образом органическое различие между постоянным и
+переменным капиталами погашается в понятии прибыли&hellip;»
+<a class="reflink" name="back5" href="#ref5" title="К. Маркс (под редакцией Ф. Энгельса).  Капитал. Критика политической экономии. Том третий. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 25, ч. 1, с. 182&ndash;183.">[5]</a>.
+</p>
+<p class='vspace'>Норма прибыли определяется отношением ко всему капиталу, в то время как 
+норма прибавочной стоимости определяется отношением прибавочной 
+стоимости к переменному капиталу. Следовательно, норма прибыли на 
+данный капитал всегда меньше нормы его прибавочной стоимости, поскольку 
+капитал состоит не только из переменной, но и из постоянной части. 
+Разница между ними тем больше, чем больше разница между всем капиталом и 
+его переменной частью, т. е. чем больше доля постоянного капитала во 
+всем капитале.
+</p>
+<div class='vspace'></div><h2><a name='toc350' id='toc350'></a>185.1.&ensp;Факторы, определяющие норму прибыли</h2>
+<p>Норма прибыли прежде всего зависит от нормы прибавочной стоимости. Чем выше норма прибавочной стоимости, тем при прочих равных условиях выше норма прибыли. 
+</p>
+<p class='vspace'>Если рассматривать годовую норму прибыли, то её величина определяется также скоростью оборота капитала. С ускорением оборота переменного капитала увеличивается масса прибавочной стоимости, создаваемая с помощью этого капитала. Поэтому капитал с относительно коротким периодом оборота за год приносит более значительную прибыль, нежели капитал, совершающий оборот в течение относительно длительного времени.
+</p>
+<p class='vspace'>Норма прибыли зависит также от <em><a class='wikilink' href='Marksizm.StroenieKapitala.html' title='Строение капитала'>органического строения капитала</a></em> (отношения постоянного капитала к переменному, <em>c/v</em>). При норме
+прибавочной стоимости в 100% капитал, состоящий из 60<em>c</em>+40<em>v</em>, приносит 40% прибыли, а капитал, состоящий из 80<em>с</em> + 20<em>v</em> — лишь 20%. При данной массе прибавочной стоимости норма прибыли будет тем выше, чем меньше расходы на элементы постоянного капитала. Следовательно, при прочих равных условиях уменьшение издержек на постоянный капитал повышает норму прибыли. Это побуждает капиталистов к экономному использованию средств производства. Экономия достигается в первую очередь за счёт применения возрастающей массы живого труда при той же величине основного капитала. Например, при удлинении рабочего дня, в отличие от роста количества рабочих, не требуется увеличивать элемент основного капитала, и потому возрастающей массе прибавочной стоимости противостоит здесь меньшая сумма постоянного капитала, чем при росте числа рабочих, что означает более высокую норму прибыли. Капиталисты также стремятся экономить на постоянном капитале, что во многих случаях ведёт к ухудшению условий труда рабочих.
+</p>
+<p class='vspace'>Дальнейшее рассмотрение нормы прибыли см. в статье <a class='wikilink' href='Marksizm.SrednjajaNormaPribyliICenaProizvodstva.html' title='Средняя норма прибыли и цена производства'>Средняя норма прибыли и цена производства</a>.
+</p>
+<div class='vspace'></div><div class='small' style='font-size: 90%;' > 
+<h1><a name='toc351' id='toc351'></a>186.&ensp;Несостоятельность буржуазных теорий прибыли</h1>
+<p>Непременным условием капиталистической формы эксплуатации являются товарные отношения, купля-продажа товара <a class='wikilink' href='Marksizm.RabochajaSila.html' title='Рабочая сила'>рабочая сила</a>. Тем самым создаётся обманчивое впечатление, что капиталист и рабочий обмениваются равными стоимостями. Эта видимость явлений лежит также в основе представления, будто прибыль возникает благодаря актам обращения и является результатом движения не только переменного, но и постоянного капитала, поскольку движение обеих частей капитала в сфере обращения одинаково. Такая форма проявления глубинных связей и зависимости скрывает действительный источник прибыли и поэтому оказывается очень удобной для апологетов капитализма. Представители вульгарной политической экономии стремятся опровергнуть главное в экономической теории марксизма — учение о прибавочной стоимости, т. к. именно оно раскрывает сущность и механизм капиталистической эксплуатации, вооружает рабочий класс научным пониманием его исторической миссии.
+</p>
+<div class='vspace'></div><h2><a name='toc352' id='toc352'></a>186.1.&ensp;Меркантилисты</h2>
+<p>Ещё <a title='Меркантилисты' class='createlinktext' href='Marksizm.Merkantilisty?action=edit.html'>меркантилисты</a> утверждали, что прибыль возникает из <em>обращения</em>. Конечно, вне обращения прибыль не может быть реализована и присвоена. Однако нельзя смешивать вопрос об источнике прибыли с вопросом о том, в какой сфере она <em>реализуется</em>. Меркантилисты видели, что прибыль реализуется в сфере обращения, и, оставаясь в пределах этой видимости, не могли понять, что прибыль создаётся в процессе производства. Они были далеки от понимания действительной природы и действительного источника прибыли.
+</p>
+<div class='vspace'></div><h2><a name='toc353' id='toc353'></a>186.2.&ensp;Физиократы</h2>
+<p><a title='Физиократы' class='createlinktext' href='Marksizm.Fiziokraty?action=edit.html'>Физиократы</a> изображали прибыль (чистый продукт) как результат особой производительной силы <em>земли</em>. Следует строго различать <em>действие сил природы</em>, участвующих в создании <em>потребительной стоимости</em>, и <em>функцию труда</em>, способного создать <em>стоимость и прибавочную стоимость</em>. Физиократы смешивали физический прирост земледельческих продуктов с приростом стоимости. Поэтому они ошибочно ограничивали сферу производства прибыли земледелием и, по существу, выдавали прирост потребительных стоимостей за прирост стоимости.
+</p>
+<div class='vspace'></div><h2><a name='toc354' id='toc354'></a>186.3.&ensp;Вульгарная политическая экономия начала XIX в.</h2>
+<p>Вульгарная политическая экономия начала XIX в. пыталась вывести прибыль из естественных свойств капитала, утверждая, что труд создаёт заработную плату, а капитал — прибыль. Вопрос о капитале как <em>основании</em> для присвоения прибыли (им является собственность эксплуататора на средства производства) не должен смешиваться с вопросом об <em>источнике</em> прибыли, каковым является прибавочный труд, создающий прибавочную стоимость. Между тем вульгарные экономисты подменяли вопрос об <em>источнике</em> прибыли вопросом о том, на какой основе можно в буржуазном обществе <em>получить</em> прибыль.
+</p>
+<div class='vspace'></div><h2><a name='toc355' id='toc355'></a>186.4.&ensp;Вульгарная политическая экономия второй половины XIX в.</h2>
+<p>Во второй половине XIX в. вульгарная политэкономия в лице представителя так называемой <a title='Теория Предельной Полезности' class='createlinktext' href='Marksizm.TeorijaPredelqnojPoleznosti?action=edit.html'>теории предельной полезности</a> Бём-Баверка пыталась дать психологическое объяснение прибыли. Прибыль, по Бём-Баверку, возникает вследствие того, что капиталист берёт на себя «выжидание» превращения средств производства в конечную готовую продукцию. Средства производства, по мнению Бём-Баверка, — это <em>блага будущие</em>, а готовый продукт — это <em>блага настоящие</em>. Блага настоящие оцениваются выше, чем блага будущие. В процессе производства блага будущие (средства производства) превращаются в блага настоящие (готовую продукцию), и ценность их повышается. Разница между ценностью благ настоящих и благ будущих и есть, по Бем-Баверку, прибыль, которая, таким образом, возникает не в результате эксплуатации, а вследствие психологического акта «выжидания». Конечно, между средствами производства и готовой продукцией есть разница. Но это есть различие потребительных стоимостей, которое не находится ни в какой связи с различием их стоимостей. Нелепо в условиях капитализма при наличии рынка говорить о необходимости выжидания. В каждый данный момент имеется возможность приобретать не только средства производства, но и готовые продукты. Да и само деление благ на будущие и настоящие является искусственным не в меньшей мере, чем догма об их различной ценности.
+</p>
+<div class='vspace'></div></div>
+<div class='frame'><div><b> Литература</b></div>
+<div class="ref" id="ref1"><a class="reflink" href="#back1">[1]</a>&nbsp; К. Маркс (под редакцией Ф. Энгельса).  <a target='_blank'  class='urllink' href='http://esperanto.mv.ru/Marksismo/Kapital3/kapital3-01.html#p30.html' rel='nofollow'>Капитал. Критика политической экономии. Том третий</a><small>. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 25, ч. 1, с. 30.</small> </div>
+<div class="ref" id="ref2"><a class="reflink" href="#back2">[2]</a>&nbsp; К. Маркс (под редакцией Ф. Энгельса).  <a target='_blank'  class='urllink' href='http://esperanto.mv.ru/Marksismo/Kapital3/kapital3-01.html#p43.html' rel='nofollow'>Капитал. Критика политической экономии. Том третий</a><small>. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 25, ч. 1, с. 43.</small> </div>
+<div class="ref" id="ref3"><a class="reflink" href="#back3">[3]</a>&nbsp; К. Маркс (под редакцией Ф. Энгельса).  <a target='_blank'  class='urllink' href='http://esperanto.mv.ru/Marksismo/Kapital3/kapital3-01.html#p44.html' rel='nofollow'>Капитал. Критика политической экономии. Том третий</a><small>. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 25, ч. 1, с. 44.</small> </div>
+<div class="ref" id="ref4"><a class="reflink" href="#back4">[4]</a>&nbsp; К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 32, с. 60. </div>
+<div class="ref" id="ref5"><a class="reflink" href="#back5">[5]</a>&nbsp; К. Маркс (под редакцией Ф. Энгельса).  <a target='_blank'  class='urllink' href='http://esperanto.mv.ru/Marksismo/Kapital3/kapital3-09.html#p182.html' rel='nofollow'>Капитал. Критика политической экономии. Том третий</a><small>. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 25, ч. 1, с. 182&ndash;183.</small> </div>
+</div>
+
+<p class='vspace'  style='text-align: center; font-size: 80%; font-weight: bold;'><span class='wikitrail'>&lt; <a class='wikilink' href='Marksizm.PribavochnajaStoimostq.html' title='Прибавочная стоимость'>Прибавочная стоимость</a> | <a class='wikilink' href='Marksizm.PribavochnajaStoimostqIPribylq.html' title='Серия статей: Прибавочная стоимость и прибыль'>Прибавочная стоимость и прибыль</a> | <a class='wikilink' href='Marksizm.SrednjajaNormaPribyliICenaProizvodstva.html' title='Средняя норма прибыли и цена производства'>Средняя норма прибыли и цена производства</a> &gt;</span>
+</p>
+<div class='vspace'></div><hr />
+<p>Разделы: <a class='categorylink' href='Category.Politehkonomija.html'>Политэкономия</a>, <a class='categorylink' href='Category.Ehkonomika.html'>Экономика</a>
+</p>
+<div class='vspace'></div><hr />
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+    </div><!-- id='content' -->
+<!--HTMLFooter-->
+  </div><!-- id='globalwrapper' -->
+
+
+</body>
+</html>

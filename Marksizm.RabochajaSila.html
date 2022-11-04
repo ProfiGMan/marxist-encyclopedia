@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="ru">
+<!-- load/load.tmpl
+See PHP for credits and license
+-->
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <title>Рабочая сила</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="shortcut icon" href="serpo_kaj_martelo.gif" />
+  <link rel="icon" href="serpo_kaj_martelo.gif" />
+  <!--HTMLHeader--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: pre; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  
+span.anchor {
+    float: left;
+    font-size: 60%;
+    margin-left: -1em;
+    width: 1em;
+    position:relative; top:-0.1em;
+    text-align: center;
+}
+span.anchor a { text-decoration: none; }
+span.anchor a:hover { text-decoration: underline; }
+ol.toc { text-indent:-25px; list-style: none; margin-bottom:2px !important; margin-top:2px !important; }
+ol ol.toc { margin-left:-24px; text-indent:24px; }
+ol.toc li {text-align: left; }
+div.tocfloat { font-size: smaller; margin-bottom: 10px;
+    border-top: 1px dotted #555555; border-bottom: 1px dotted #555555;
+    padding-top: 5px;
+    width: 38%; float: right; margin-left: 10px; clear: right;
+    margin-right:-21px; padding-right: 13px; padding-left: 13px;
+    background-color: #eeeeee; }
+div.toc { font-size: smaller;
+    border: 1px dotted #cccccc;
+    background: #f7f7f7;
+    margin-bottom: 10px; }
+div.toc p { background-color: #f9f6d6;
+    padding: 5px;
+    border-bottom:  1px dotted #cccccc; }
+div.ref:target {
+  background-color: #B0D3EB;
+}
+div.ref {
+  margin: 0 !important;
+  padding: 0 !important;
+  border:  0 !important;
+  font-size: 85%;
+  text-align: left !important;
+}
+a.reflink {
+  vertical-align: baseline;
+  font-size: 0.8em;
+  position: relative;
+  top: -0.4em;
+}
+.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+  td.markup1 pre { white-space: pre-wrap; }
+  .noPmTOC, .PmTOCdiv:empty {display:none;}
+.PmTOCdiv { display: inline-block; font-size: 13px; overflow: auto; max-height: 500px;}
+.PmTOCdiv a { text-decoration: none;}
+.back-arrow {font-size: .9em; text-decoration: none;}
+#PmTOCchk + label {cursor: pointer;}
+#PmTOCchk {display: none;}
+#PmTOCchk:not(:checked) + label > .pmtoc-show {display: none;}
+#PmTOCchk:checked + label > .pmtoc-hide {display: none;}
+#PmTOCchk:checked + label + div {display: none;}table.sortable th { cursor: pointer; }
+table.sortable th::after { color: transparent; content: "\00A0\025B8"; }
+table.sortable th:hover::after { color: inherit; content: "\00A0\025B8"; }
+table.sortable th.dir-u::after { color: inherit; content: "\00A0\025BE"; }
+table.sortable th.dir-d::after { color: inherit; content: "\00A0\025B4"; } 
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none;}
+
+--></style>
+  <link href='commentboxplus.css' rel='stylesheet' type='text/css' /><script type="text/javascript">
+function toggle(obj, hide, show) {
+    var elstyle = document.getElementById(obj).style;
+    var text    = document.getElementById(obj + "tog");
+    if(!hide) { var hide = "скрыть"; }
+    if(!show) { var show = "показать"; }
+    if (elstyle.display == 'none') {
+        elstyle.display = 'block';
+        text.innerHTML  = hide;
+    } else {
+        elstyle.display = 'none';
+        text.innerHTML  = show;
+    }
+}
+</script>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='load.css' />
+
+  <!-- <link rel='stylesheet' href='load.css' type='text/css'/> -->
+
+
+</head>
+<body><a name='load_topofpage'></a>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbodycaption'></div>
+        <div class='pageleftbody' id='sidebar'>
+          
+<h1><a class='selflink' href='Marksizm.Marksizm.html' title='Энциклопедия марксизма'>Содержание</a></h1>
+<ul><li><a class='wikilink' href='Marksizm.KratkijObzor.html' title='Краткий обзор марксизма'>Марксизм: краткий обзор</a>
+</li><li><a class='wikilink' href='Category.Razdely.html' title='Разделы'>Основные разделы</a> <div class='fpltemplate'><ul  style='text-align: left;'><li  style='text-align: left;'> <a class='wikilink' href='Category.Neokonchennoe.html' title='&#39;&#39;Неоконченное&#39;&#39;'><em>Неоконченное</em></a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Avtoram.html' title='Авторам'>Авторам</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Istorija.html' title='История'>История</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.NauchnyjKommunizm.html' title='Научный коммунизм'>Научный коммунизм</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.OProizvedenijax.html' title='О произведениях'>О произведениях</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Personalii.html' title='Персоналии'>Персоналии</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politika.html' title='Политика'>Политика</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politehkonomija.html' title='Политэкономия'>Политэкономия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Filosofija.html' title='Философия'>Философия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Ehkonomika.html' title='Экономика'>Экономика</a>
+</li></ul>
+</div>
+</li></ul><hr />
+<ul><li><a class='urllink' href='/wiki/staticload.php' rel='nofollow'>Скачать</a>
+</li></ul><hr />
+<ul><li><a class='wikilink' href='Marksizm.RecentChanges.html' title='Последние изменения'>Последние изменения</a>
+</li></ul>
+        </div><!-- id='sidebar' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url(logo.gif);'
+           href='index.htm' title="Энциклопедия марксизма"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+          <!--PageTitleFmt--><h1 class='titlepage'>Рабочая сила</h1><!--/PageTitleFmt-->
+          <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p class='vspace'>Рабочая сила — способность к <a class='wikilink' href='Marksizm.Trud.html' title='Труд'>труду</a>, совокупность физических и интеллектуальных способностей, которыми располагает человек и которые используются им для производства жизненных благ. Рабочая сила может функционировать лишь в системе определённых производственных отношений и является главной производительной силой общества, определяющим элементом производительных сил. «Первая производительная сила всего человечества, — подчёркивал В. И. Ленин, — есть рабочий, трудящийся» <a class="reflink" name="back1" href="#ref1" title="В. И. Ленин. I Всероссийский съезд по внешкольному образованию 6&#8211;19 мая 1919 г. 2. Речь об обмане народа лозунгами свободы и равенства 19 мая. ПСС, изд. 5,  т. 38, с. 359.">[1]</a>.
+</p>
+<p class='vspace'>Воздействуя в процессе трудовой деятельности на вещество природы, видоизменяя и подчиняя его себе, человек, в свою очередь, совершенствует трудовые навыки, приобретает производственный опыт, накапливает теоретические и технические знания. Решающее воздействие на характер и объём трудовых функций оказывает уровень развития средств труда. Социально-экономические условия использования рабочей силы находятся в непосредственной зависимости от способа соединения рабочей силы со <a class='wikilink' href='Marksizm.SredstvaProizvodstva.html' title='Средства производства'>средствами производства</a>. «Тот особый характер и способ, каким осуществляется это соединение, — указывал К. Маркс, — отличает различные экономические эпохи общественного строя» <a class="reflink" name="back2" href="#ref2" title="К. Маркс (под редакцией Ф. Энгельса).  Капитал. Критика политической экономии. Том второй. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 24, с. 43.">[2]</a>. В условиях рабовладельческого и феодального способов производства собственность (полная и неполная) господствующих классов на рабочую силу являлась предпосылкой эксплуатации на основе внеэкономических методов принуждения к труду. При <a class='wikilink' href='Marksizm.Kapitalizm.html' title='Капитализм'>капитализме</a> рабочая сила выступает как <a class='wikilink' href='Marksizm.Tovar.html' title='Товар'>товар</a>. Рабочая сила становится товаром при наличии определённых социально-экономических условий. Во-первых, носитель рабочей силы должен быть юридически независимым лицом и иметь возможность свободно распоряжаться своей рабочей силой. Во-вторых, собственник рабочей силы должен быть лишён средств производства, т. е. не иметь возможностей для самостоятельного ведения хозяйства. Превращение рабочей силы в товар явилось закономерным результатом развития мелкого <a class='wikilink' href='Marksizm.TovarnoeProizvodstvo.html' title='Товарное производство'>товарного производства</a>. На основе действия <a title='Закон Стоимости' class='createlinktext' href='Marksizm.ZakonStoimosti?action=edit.html'>закона стоимости</a> происходил процесс дифференциации товаропроизводителей. Большую роль в подготовке условий капиталистического производства, в отделении непосредственных производителей от средств производства сыграли такие внеэкономические и экономические факторы, как экспроприация земель, жестокие законы против экспроприированных, колониальная система, государственные займы, <a title='Налоги' class='createlinktext' href='Marksizm.Nalogi?action=edit.html'>налоги</a>, <a title='Протекционизм' class='createlinktext' href='Marksizm.Protekcionizm?action=edit.html'>протекционизм</a> и т. д.
+</p>
+<p class='vspace'>Как и любой другой товар, рабочая сила в условиях капитализма обладает <a class='wikilink' href='Marksizm.Stoimostq.html' title='Стоимость'>стоимостью</a> и потребительной стоимостью. Стоимость специфического товара рабочая сила определяется стоимостью жизненных средств, необходимых для осуществления рабочим нормальной трудовой деятельности и содержания его семьи. Наряду с удовлетворением потребностей в пище, одежде, жилище стоимость рабочей силы включает в себя духовный элемент (культурные потребности рабочих, расходы на образование, профессиональную подготовку). Большое влияние на величину и структуру стоимости рабочей силы в различных странах оказывают исторические особенности её формирования. Стоимость рабочей силы изменяется в зависимости от уровня экономического развития страны, природно-климатических условий, революционных традиций и организованности рабочего класса.
+</p>
+<p class='vspace'>Противоречивое воздействие на динамику стоимости рабочей силы оказывает современная научно-техническая революция. С одной стороны, гигантское развитие производительных сил, рост общественной производительности труда ведут к удешевлению стоимости жизненных средств, потребляемых рабочими, и, следовательно, способствуют снижению стоимости специфического товара рабочая сила. С другой стороны, действуют факторы, способствующие повышению стоимости рабочей силы. Так, современное оборудование требует более образованной, квалифицированной и дорогой рабочей силы.
+</p>
+<p class='vspace'>Превращение науки в непосредственную производительную силу, качественные изменения в материально-технической базе (автоматизация, компьютеризация, химизация производства и т. п.) обусловили сдвиги в профессиональном и квалификационном составе рабочей силы в направлении расширения числа профессий, в которых преобладает умственный труд, а также предопределили повышение удельного веса работников высокой и средней квалификации. Это также требует дополнительных затрат на повышение образовательного уровня рабочего класса, профессиональную подготовку и переподготовку кадров.
+</p>
+<p class='vspace'>В капиталистическом обществе стоимость рабочей силы принимает превращённую форму <a title='Заработная Плата' class='createlinktext' href='Marksizm.ZarabotnajaPlata?action=edit.html'>заработной платы</a>. Для капиталистического способа производства характерна тенденция к отставанию заработной платы от стоимости рабочей силы. В условиях государственно-монополистического капитализма действие этой тенденции усиливается под влиянием политики цен, налогообложения, <a title='Инфляция' class='createlinktext' href='Marksizm.Infljacija?action=edit.html'>инфляции</a>.
+</p>
+<p class='vspace'>Потребительная стоимость рабочей силы состоит в способности рабочего создавать в процессе производства <a class='wikilink' href='Marksizm.PribavochnajaStoimostq.html' title='Прибавочная стоимость'>прибавочную стоимость</a> для капиталиста. Экономический интерес капиталиста как покупателя рабочей силы реализуется в том, что в процессе трудовой деятельности стоимость, создаваемая рабочей силой, оказывается большей, чем стоимость самой рабочей силы. Современный капитализм характеризуется усилением эксплуатации наёмной рабочей силы.
+</p>
+<p class='vspace'>В социалистическом обществе соединение рабочей силы со средствами производства осуществляется в условиях общественной собственности на средства производства, на основе планомерной организации процесса производства. Рабочая сила в условиях социализма не является товаром. Социалистическое общество в плановом порядке учитывает стоимость жизненных благ при воспроизводстве рабочей силы. 
+</p>
+<div class='vspace'></div><div class='frame'><div><b> Литература</b></div>
+<div class="ref" id="ref1"><a class="reflink" href="#back1">[1]</a>&nbsp; В. И. Ленин. I Всероссийский съезд по внешкольному образованию 6&#8211;19 мая 1919 г. 2. Речь об обмане народа лозунгами свободы и равенства 19 мая<small>. ПСС, изд. 5,  <a target='_blank'  class='urllink' href='http://uaio.ru/vil/38.htm#s359' rel='nofollow'>т. 38, с. 359</a></small>. </div>
+<div class="ref" id="ref2"><a class="reflink" href="#back2">[2]</a>&nbsp; К. Маркс (под редакцией Ф. Энгельса).  <a target='_blank'  class='urllink' href='http://esperanto.mv.ru/Marksismo/Kapital2/kapital2-01.html#p43.html' rel='nofollow'>Капитал. Критика политической экономии. Том второй</a><small>. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 24, с. 43.</small> </div>
+</div>
+
+<div class='vspace'></div><hr />
+<p>Разделы: <a class='categorylink' href='Category.Politehkonomija.html'>Политэкономия</a>
+</p>
+<p class='vspace'><a name='comment1' id='comment1'></a>
+</p><div class='messagehead' > 
+<h5><a title='EK' class='createlinktext' href='Profiles.EK?action=edit.html'>EK</a>  &mdash;  <span style='font-size:83%'>02 May 2011, 10:33</span>  </h5>
+</div><div class='messageitem' > 
+<p>Кажется натяжкой и сомнительным:
+«Противоречивое воздействие на динамику стоимости рабочей силы оказывает современная научно-техническая революция. С одной стороны&hellip; С другой стороны&hellip; интенсификация производственных процессов требует дополнительных затрат, связанных с возмещением более усиленного расходования физической и нервной энергии.»
+Т.е в результате НТР имеем повышение трудовой нагрузки, даже и физической! Такое, конечно, бывает, но явно не как главная тенденция.
+</p></div>
+<p class='vspace'><a name='comment2' id='comment2'></a>
+</p><div class='messagehead' > 
+<h5><a title='Yura' class='createlinktext' href='Profiles.Yura?action=edit.html'>yura</a>  &mdash;  <span style='font-size:83%'>04 May 2011, 20:11</span>  </h5>
+</div><div class='messageitem' > 
+<p>Мне кажется, что тут (в источнике — БСЭ) как раз имеется в виду, что такое <em>может быть</em>, но не обязательно. Об этом свидетельствует вводное слово «Так» («Так, интенсификация&hellip;»), которое я в данном контексте понимаю как «например». Я считаю важным подчеркнуть, что в результате НТР <em>может</em> повышаться трудовая нагрузка, что она <em>не обязательно</em> её снижает. Если конкретная словесная формулировка не устраивает, предложите другую.
+</p></div>
+<p class='vspace'><a name='comment3' id='comment3'></a>
+</p><div class='messagehead' > 
+<h5><a title='Rexy-Craxy' class='createlinktext' href='Profiles.Rexy-Craxy?action=edit.html'>Rexy-Craxy</a>  &mdash;  <span style='font-size:83%'>05 May 2011, 10:57</span>  </h5>
+</div><div class='messageitem' > 
+<p>Не надо притягивать никаких «трудовых нагрузок» (что за зверь такой?). В результате развития средств труда повышается его производительность, сл-но, при остающейся прежнею продолжительности рабочего дня норма эксплуатации растет. Т.о., степень эксплуатации современного рабочего <em>выше</em>, чем сто лет назад. И количество теряемых за смену калорий (например) тут ни причем: <em>общественная</em> норма эксплуатации стоит выше, что в переводе на «человеческий язык» означает: современный рабочий безвозмездно трудится на буржуя <em>бОльшую</em> часть своего рабочего дня, чем его дед или прадед.
+</p></div>
+<p class='vspace'><a name='comment4' id='comment4'></a>
+</p><div class='messagehead' > 
+<h5><a title='EK' class='createlinktext' href='Profiles.EK?action=edit.html'>EK</a>  &mdash;  <span style='font-size:83%'>07 May 2011, 16:15</span>  </h5>
+</div><div class='messageitem' > 
+<p>&gt;«трудовых нагрузок» (что за зверь такой?
+из контекста ясно: степень расходования физической и нервной энергии
+</p>
+<p class='vspace'>Речь вообще идет не о норме эксплуатации, а о стоимости рабсилы. Последнее предложение («интенсификация производственных процессов требует дополнительных затрат, связанных с возмещением более усиленного расходования физической и нервной энергии») равносильно утверждению, что на более производительном оборудовании находится меньше желающих работать, поэтому им приходится платить больше. Если это и бывает, то в весьма специфических случаях, и не имеет отношения к собственно НТР (поэтому об этом странно говорить в абзаце о НТР), а к общему стремлению капитала интенсифицировать труд.
+Я бы заменил это предложение в некотором отношении противоположным:
+«Современное оборудование требует более образованной, квалифицированной и дорогой рабочей силы».
+</p>
+<div class='vspace'></div></div>
+<p class='vspace'><a name='comment5' id='comment5'></a>
+</p><div class='messagehead' > 
+<h5><a title='Yura' class='createlinktext' href='Profiles.Yura?action=edit.html'>yura</a>  &mdash;  <span style='font-size:83%'>09 May 2011, 10:59</span>  </h5>
+</div><div class='messageitem' > 
+<p><em>«Современное оборудование требует более образованной, квалифицированной и дорогой рабочей силы»</em> &mdash; согласен. Заменил.
+</p></div>
+<p class='vspace'><a name='comment6' id='comment6'></a>
+</p><div class='messagehead' > 
+<h5><a title='EK' class='createlinktext' href='Profiles.EK?action=edit.html'>EK</a>  &mdash;  <span style='font-size:83%'>13 May 2011, 08:56</span>  </h5>
+</div><div class='messageitem' > 
+<p>Мне кажется, что я понял, откуда появилось это положение в советском определении &mdash; это неуклюжая попытка оправдать то неприятное обстоятельство, что рабочий в США получает гораздо больше, чем в СССР. Впору их пожалеть &mdash; да они «более усиленно расходуют физическую и нервную энергию»!
+</p></div>
+<p class='vspace'><a name='comment7' id='comment7'></a>
+</p><div class='messagehead' > 
+<h5><a title='Yura' class='createlinktext' href='Profiles.Yura?action=edit.html'>yura</a>  &mdash;  <span style='font-size:83%'>13 May 2011, 13:58</span>  </h5>
+</div><div class='messageitem' > 
+<p><em>неуклюжая попытка оправдать</em> &mdash;
+Хм. А массовое производство, конвейер &mdash; порождение НТР? Там разве не происходит «усиленного расходования» по крайней мере нервной энергии? Всё-таки, по-моему, авторы БСЭ были не настолько глупы. Другое дело, что считать это доминирующей тенденцией вряд ли можно.
+</p></div>
+<p class='vspace'><a name='comment8' id='comment8'></a>
+</p><div class='messagehead' > 
+<h5><a title='EK' class='createlinktext' href='Profiles.EK?action=edit.html'>EK</a>  &mdash;  <span style='font-size:83%'>15 May 2011, 09:30</span>  </h5>
+</div><div class='messageitem' > 
+<p>авторы БСЭ вовсе не глупы, но до конца честными они быть не могли.
+На конвейерах работает меньшинство и их з/п примерно такая же, как у основной массы работников. Ещё можно вспомнить такую результат НТР (который авторы БСЭ вряд ли могли иметь в виду), как шпионаж за работником (видеокамеры и т.п.). Это безусловно повышает интенсивность труда, но сомневаюсь, что повышает стоимость рабсилы &mdash; работодатель просто считает, что «отбивает» стоимость уже оплаченной рабсилы, которую до того работник у него «воровал», использую рабочее время не целевым образом.
+</p></div>
+<div class='vspace'></div><hr />
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+    </div><!-- id='content' -->
+<!--HTMLFooter-->
+  </div><!-- id='globalwrapper' -->
+
+
+</body>
+</html>

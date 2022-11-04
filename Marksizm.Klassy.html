@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="ru">
+<!-- load/load.tmpl
+See PHP for credits and license
+-->
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <title>Классы</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="shortcut icon" href="serpo_kaj_martelo.gif" />
+  <link rel="icon" href="serpo_kaj_martelo.gif" />
+  <!--HTMLHeader--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: pre; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  
+span.anchor {
+    float: left;
+    font-size: 60%;
+    margin-left: -1em;
+    width: 1em;
+    position:relative; top:-0.1em;
+    text-align: center;
+}
+span.anchor a { text-decoration: none; }
+span.anchor a:hover { text-decoration: underline; }
+ol.toc { text-indent:-25px; list-style: none; margin-bottom:2px !important; margin-top:2px !important; }
+ol ol.toc { margin-left:-24px; text-indent:24px; }
+ol.toc li {text-align: left; }
+div.tocfloat { font-size: smaller; margin-bottom: 10px;
+    border-top: 1px dotted #555555; border-bottom: 1px dotted #555555;
+    padding-top: 5px;
+    width: 38%; float: right; margin-left: 10px; clear: right;
+    margin-right:-21px; padding-right: 13px; padding-left: 13px;
+    background-color: #eeeeee; }
+div.toc { font-size: smaller;
+    border: 1px dotted #cccccc;
+    background: #f7f7f7;
+    margin-bottom: 10px; }
+div.toc p { background-color: #f9f6d6;
+    padding: 5px;
+    border-bottom:  1px dotted #cccccc; }
+div.ref:target {
+  background-color: #B0D3EB;
+}
+div.ref {
+  margin: 0 !important;
+  padding: 0 !important;
+  border:  0 !important;
+  font-size: 85%;
+  text-align: left !important;
+}
+a.reflink {
+  vertical-align: baseline;
+  font-size: 0.8em;
+  position: relative;
+  top: -0.4em;
+}
+.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+  td.markup1 pre { white-space: pre-wrap; }
+  .noPmTOC, .PmTOCdiv:empty {display:none;}
+.PmTOCdiv { display: inline-block; font-size: 13px; overflow: auto; max-height: 500px;}
+.PmTOCdiv a { text-decoration: none;}
+.back-arrow {font-size: .9em; text-decoration: none;}
+#PmTOCchk + label {cursor: pointer;}
+#PmTOCchk {display: none;}
+#PmTOCchk:not(:checked) + label > .pmtoc-show {display: none;}
+#PmTOCchk:checked + label > .pmtoc-hide {display: none;}
+#PmTOCchk:checked + label + div {display: none;}table.sortable th { cursor: pointer; }
+table.sortable th::after { color: transparent; content: "\00A0\025B8"; }
+table.sortable th:hover::after { color: inherit; content: "\00A0\025B8"; }
+table.sortable th.dir-u::after { color: inherit; content: "\00A0\025BE"; }
+table.sortable th.dir-d::after { color: inherit; content: "\00A0\025B4"; } 
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none;}
+
+--></style>
+  <link href='commentboxplus.css' rel='stylesheet' type='text/css' /><script type="text/javascript">
+function toggle(obj, hide, show) {
+    var elstyle = document.getElementById(obj).style;
+    var text    = document.getElementById(obj + "tog");
+    if(!hide) { var hide = "скрыть"; }
+    if(!show) { var show = "показать"; }
+    if (elstyle.display == 'none') {
+        elstyle.display = 'block';
+        text.innerHTML  = hide;
+    } else {
+        elstyle.display = 'none';
+        text.innerHTML  = show;
+    }
+}
+</script>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='load.css' />
+
+  <!-- <link rel='stylesheet' href='load.css' type='text/css'/> -->
+
+
+</head>
+<body><a name='load_topofpage'></a>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbodycaption'></div>
+        <div class='pageleftbody' id='sidebar'>
+          
+<h1><a class='selflink' href='Marksizm.Marksizm.html' title='Энциклопедия марксизма'>Содержание</a></h1>
+<ul><li><a class='wikilink' href='Marksizm.KratkijObzor.html' title='Краткий обзор марксизма'>Марксизм: краткий обзор</a>
+</li><li><a class='wikilink' href='Category.Razdely.html' title='Разделы'>Основные разделы</a> <div class='fpltemplate'><ul  style='text-align: left;'><li  style='text-align: left;'> <a class='wikilink' href='Category.Neokonchennoe.html' title='&#39;&#39;Неоконченное&#39;&#39;'><em>Неоконченное</em></a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Avtoram.html' title='Авторам'>Авторам</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Istorija.html' title='История'>История</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.NauchnyjKommunizm.html' title='Научный коммунизм'>Научный коммунизм</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.OProizvedenijax.html' title='О произведениях'>О произведениях</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Personalii.html' title='Персоналии'>Персоналии</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politika.html' title='Политика'>Политика</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politehkonomija.html' title='Политэкономия'>Политэкономия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Filosofija.html' title='Философия'>Философия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Ehkonomika.html' title='Экономика'>Экономика</a>
+</li></ul>
+</div>
+</li></ul><hr />
+<ul><li><a class='urllink' href='/wiki/staticload.php' rel='nofollow'>Скачать</a>
+</li></ul><hr />
+<ul><li><a class='wikilink' href='Marksizm.RecentChanges.html' title='Последние изменения'>Последние изменения</a>
+</li></ul>
+        </div><!-- id='sidebar' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url(logo.gif);'
+           href='index.htm' title="Энциклопедия марксизма"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+          <!--PageTitleFmt--><h1 class='titlepage'>Классы</h1><!--/PageTitleFmt-->
+          <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p class='vspace'>Классы &mdash; «большие группы людей, различающиеся по их месту в исторически определённой системе общественного производства, по их отношению (большей частью закреплённому и оформленному в законах) к средствам производства, по их роли в общественной организации труда, а следовательно, по способам получения и размерам той доли общественного богатства, которой они располагают. Классы, это такие группы людей, из которых одна может себе присваивать труд другой, благодаря различию их места в определённом укладе общественного хозяйства» <a class="reflink" name="back1" href="#ref1" title="В. И. Ленин. Великий почин . ПСС, изд. 5,  т. 39, с. 15.">[1]</a>. 
+</p>
+<p class='vspace'>Существование классов связано лишь с исторически определёнными <a class='wikilink' href='Marksizm.SposobProizvodstva.html' title='Способ производства'>способами производства</a>. Классовая дифференциация является для общества основной среди других различий между людьми именно потому, что она возникает в сфере <a class='wikilink' href='Marksizm.Proizvodstvo.html' title='Производство'>производства</a> на основе общественного <a class='wikilink' href='Marksizm.RazdelenieTruda.html' title='Разделение труда'>разделения труда</a> и <a title='Частная Собственность' class='createlinktext' href='Marksizm.ChastnajaSobstvennostq?action=edit.html'>частной собственности на средства производства</a>.  Классы возникают на той ступени общественного производства, когда появление прибавочного продукта и разделения труда сделало экономически выгодной эксплуатацию рабочей силы. 
+</p>
+<p class='vspace'>Важнейшие положения научной теории классов сформулированы К. Марксом и Ф. Энгельсом. В письме И. Вейдемейеру от 5 марта 1852 Маркс писал: «То, что я сделал нового, состояло в доказательстве следующего: 1) что существование классов связано лишь с определёнными историческими фазами развития производства, 2) что <a title='Классовая Борьба' class='createlinktext' href='Marksizm.KlassovajaBorqba?action=edit.html'>классовая борьба</a> необходимо ведёт к <a class='wikilink' href='Marksizm.DiktaturaProletariata.html' title='Диктатура пролетариата'>диктатуре пролетариата</a>, 3) что эта диктатура сама составляет лишь переход к уничтожению всяких классов и к обществу без классов» <a class="reflink" name="back2" href="#ref2" title="К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 28, с. 427.">[2]</a>. 
+</p>
+<p class='vspace'>При анализе классовой структуры общества марксизм различает классы основные и неосновные, а также учитывает наличие различных групп, слоев внутри классов и промежуточных прослоек между классами. Основными классами называются такие классы, существование которых непосредственно вытекает из господствующего в данной общественно-экономической формации способа производства. Это <a title='Рабы' class='createlinktext' href='Marksizm.Raby?action=edit.html'>рабы</a> и <a title='Рабовладельцы' class='createlinktext' href='Marksizm.Rabovladelqcy?action=edit.html'>рабовладельцы</a>, <a title='Крестьянство' class='createlinktext' href='Marksizm.Krestqjanstvo?action=edit.html'>крестьяне</a> и <a title='Феодалы' class='createlinktext' href='Marksizm.Feodaly?action=edit.html'>феодалы</a>, <a title='Помещики' class='createlinktext' href='Marksizm.Pomeshhiki?action=edit.html'>помещики</a>, <a class='wikilink' href='Marksizm.Proletariat.html' title='Пролетариат'>пролетарии</a> и <a class='wikilink' href='Marksizm.Burzhuazija.html' title='Буржуазия'>буржуа</a>. Но наряду с господствующим способом производства в классовых формациях могут сохраняться и остатки прежних способов производства или возникать ростки новых способов производства в виде особых <a class='wikilink' href='Marksizm.Uklad.html' title='Уклад'>укладов</a> хозяйства. С этим связано существование неосновных, переходных классов. В тех капиталистических странах, где сохранились значительные пережитки феодализма, существуют в качестве неосновных классов помещики, всё более срастающиеся с буржуазией. В большинстве капиталистических стран имеются многочисленные слои <a class='wikilink' href='Marksizm.MelkajaBurzhuazija.html' title='Мелкая буржуазия'>мелкой буржуазии</a> (мелкие крестьяне, ремесленники), которые по мере развития капитализма дифференцируются. Внутри классов обычно имеются различные слои, группы, интересы которых частично не совпадают. Так, например, в античном обществе имела место борьба между рабовладельческой аристократией и демократией, в которой отражались противоречия интересов различных слоев рабовладельцев. В капиталистическом обществе также существуют противоречия между интересами различных слоев буржуазии (например, монополистическая и немонополистическая буржуазии). 
+</p>
+<p class='vspace'>Развитие капитализма ведёт к изменениям в классовой структуре общества, которые, однако, вопреки утверждениям реформистов, не устраняют, а обостряют и углубляют классовые антагонизмы. Важнейшие из этих изменений связаны, с одной стороны, с процессом роста монополистического капитализма и его перерастанием в государственно-монополистический капитализм, а с другой &mdash; с развитием научно-технической революции. За последнее столетие в развитых капиталистических странах уменьшился удельный вес буржуазии в самодеятельном населении (если в середине 19 в. он превышал в Великобритании 8%, то в 60&ndash;70-х гг. 20 в. составлял в высокоразвитых капиталистических странах всего от 1&ndash;2 до 3&ndash;4%). В то же время колоссально возросло богатство буржуазии. Внутри неё выделилась монополистическая верхушка, соединившая в своих руках экономическую и политическую власть. Интересы монополий оказались в противоречии с интересами не только трудящихся, но и мелких и даже части средних предпринимателей. В условиях государственно-монополистического капитализма ускорился процесс вытеснения и разорения мелких частных собственников (крестьян, ремесленников и др.) и сократился их удельный вес в населении. Вместе с тем возрос удельный вес работников наёмного труда. Доля наёмных работников в развитых капиталистических странах к 80-м гг. 20 в. составила от 70 до 90% (и выше) самодеятельного населения. В общей массе лиц наёмного труда важнейшее место как по численности, так и по своей роли в производстве занимает современный <a class='wikilink' href='Marksizm.Proletariat.html' title='Пролетариат'>рабочий класс</a>. 
+</p>
+<p class='vspace'>Развитие капиталистического производства, и особенно развёртывание научно-технической революции, ведёт к существенным изменениям в структуре рабочего класса. Изменяется соотношение различных отрядов рабочего класса, прежде всего возрастает численность промышленного и уменьшается численность сельскохозяйственного.
+</p>
+<p class='vspace'>Научно-технический прогресс, рост образования и культуры привели к бурному росту <a class='wikilink' href='Marksizm.Intelligencija.html' title='Интеллигенция'>интеллигенции</a> и <a class='wikilink' href='Marksizm.Sluzhashhie.html' title='Служащие'>служащих</a>. Социальный состав интеллигенции неоднороден. Её верхушка (например, управляющие) срастается с господствующим классом; часть интеллигенции, занятая так называемыми профессиями «свободного труда», близка по своему положению к мелкой буржуазии и входит в средние слои общества. В то же время всё более значительная часть интеллигенции и служащих утрачивает своё прежнее положение привилегированного слоя общества и сближается по своему положению с рабочим классом.
+</p>
+<p class='vspace'>Изменения в социальной структуре капитализма создают предпосылки для всё более тесного союза рабочего класса с широкими слоями трудящихся города и деревни. Сближение интересов крестьянства, городских средних слоёв и интеллигенции с интересами рабочего класса способствует сужению социальной базы монополий и открывает возможности для создания широкого союза всех антимонополистических и антиимпериалистических сил. Ведущей силой в этом союзе выступает рабочий класс, который всё больше становится центром притяжения всех трудящихся слоёв населения.
+</p>
+<p class='vspace'>На протяжении тысячелетий существование классов было исторически необходимым. Оно было обусловлено, как отметил Ф. Энгельс, относительной неразвитостью <a class='wikilink' href='Marksizm.ProizvoditelqnyeSily.html' title='Производительные силы'>производительных сил</a>, когда развитие общества могло осуществляться лишь при закабалении массы трудящихся; при этом условии привилегированное меньшинство могло заниматься государственными делами, наукой, искусством и т. д. В связи с огромным ростом производительности труда, достигнутым крупной капиталистической промышленностью, возникли материальные предпосылки для уничтожения классов. Существование какого бы то ни было господствующего эксплуататорского класса не только стало излишним, но превратилось в прямое препятствие для дальнейшего развития общества.
+</p>
+<p class='vspace'>Уничтожение классов возможно лишь путём завоевания пролетариатом политической <a class='wikilink' href='Marksizm.Vlastq.html' title='Власть'>власти</a> и коренного преобразования экономического строя. Для уничтожения эксплуататорского строя необходимо ликвидировать <a title='Частная Собственность' class='createlinktext' href='Marksizm.ChastnajaSobstvennostq?action=edit.html'>частную собственность на средства производства</a> и заменить её <a title='Общественная Собственность' class='createlinktext' href='Marksizm.ObshhestvennajaSobstvennostq?action=edit.html'>общественной собственностью</a>. «Уничтожить классы &mdash; это значит поставить всех граждан в одинаковое отношение к средствам производства всего общества, это значит &mdash; все граждане имеют одинаковый доступ к работе на общественных средствах производства, на общественной земле, на общественных фабриках и так далее» <a class="reflink" name="back3" href="#ref3" title="В. И. Ленин. Либеральный профессор о равенстве. ПСС, изд. 5,  т. 24, с. 363.">[3]</a>. Классы нельзя уничтожить сразу, они продолжают существовать в течение некоторого времени и после свержения власти капиталистов и установления <a class='wikilink' href='Marksizm.DiktaturaProletariata.html' title='Диктатура пролетариата'>власти рабочего класса</a>. В <a class='wikilink' href='Marksizm.PerexodnyjPeriod.html' title='Переходный период от капитализма к социализму'>переходный период</a> от <a class='wikilink' href='Marksizm.Kapitalizm.html' title='Капитализм'>капитализма</a> к <a class='wikilink' href='Marksizm.Socializm.html' title='Социализм'>социализму</a> экономический строй является многоукладным, в большинстве стран существуют три класса: <em>рабочий класс</em>, связанный главным образом с социалистическим укладом хозяйства, трудящееся <em>крестьянство</em>, связанное в своём подавляющем большинстве с мелкотоварным укладом хозяйства (основные классы; в развитых странах крестьянство практически отсутствует), и капиталистические элементы города и деревни, связанные с частнокапиталистическим укладом хозяйства (неосновной, второстепенный класс). В результате победы социалистических форм хозяйства ликвидируются все эксплуататорские классы, общество становится бесклассовым. 
+</p>
+<p class='vspace'>Буржуазные теории классов обычно характеризуются антиисторическим подходом. Так, например, сторонники биологических теорий утверждают, что в основе деления общества на классы лежат различная биологическая ценность людей, различия в происхождении, в расовой принадлежности. Для большинства буржуазных теорий характерно отрицание материальных основ разделения общества на классы. Буржуазные социологические теории стремятся либо затушевать различия между классами, либо, наоборот, объявить их естественными и неустранимыми. Многие буржуазные социологи утверждают, что сам пролетариат «исчез», растворился в «среднем классе». Однако в действительности никакого «среднего класса» не существует; есть многочисленные промежуточные слои, которые не образуют единого класса. Их существование отнюдь не ведёт к выравниванию положения противоположных классов. Столь же несостоятельны попытки подменить разделение общества на противоположные классы делением его на множество слоёв («страт»), различающихся между собой по роду занятий, доходам, месту жительства и другим признакам. Марксизм, разумеется, не отрицает существования в обществе наряду с классами и других социальных слоёв и групп. Однако их место и роль могут быть поняты лишь при учёте того, какое место они занимают в классовой структуре общества и в борьбе между классами. Классовые противоположности нельзя заслонить профессиональными, культурными и другими различиями. Эти противоположности исчезают только в результате коренного изменения отношений производства, революционного ниспровержения устоев капиталистического общества и создания нового, социалистического общества. 
+</p>
+<div class='vspace'></div><div class='frame'><div><b> Литература</b></div>
+<div class="ref" id="ref1"><a class="reflink" href="#back1">[1]</a>&nbsp; В. И. Ленин. Великий почин <small>. ПСС, изд. 5,  <a target='_blank'  class='urllink' href='http://uaio.ru/vil/39.htm#s15' rel='nofollow'>т. 39, с. 15</a></small>. </div>
+<div class="ref" id="ref2"><a class="reflink" href="#back2">[2]</a>&nbsp; К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 28, с. 427. </div>
+<div class="ref" id="ref3"><a class="reflink" href="#back3">[3]</a>&nbsp; В. И. Ленин. Либеральный профессор о равенстве<small>. ПСС, изд. 5,  <a target='_blank'  class='urllink' href='http://uaio.ru/vil/24.htm#s363' rel='nofollow'>т. 24, с. 363</a></small>. </div>
+</div>
+
+<div class='vspace'></div><hr />
+<p>Разделы: <a class='categorylink' href='Category.NauchnyjKommunizm.html'>Научный коммунизм</a>
+</p>
+<div class='vspace'></div><hr />
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+    </div><!-- id='content' -->
+<!--HTMLFooter-->
+  </div><!-- id='globalwrapper' -->
+
+
+</body>
+</html>

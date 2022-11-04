@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="ru">
+<!-- load/load.tmpl
+See PHP for credits and license
+-->
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <title>Противоречие</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="shortcut icon" href="serpo_kaj_martelo.gif" />
+  <link rel="icon" href="serpo_kaj_martelo.gif" />
+  <!--HTMLHeader--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: pre; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  
+span.anchor {
+    float: left;
+    font-size: 60%;
+    margin-left: -1em;
+    width: 1em;
+    position:relative; top:-0.1em;
+    text-align: center;
+}
+span.anchor a { text-decoration: none; }
+span.anchor a:hover { text-decoration: underline; }
+ol.toc { text-indent:-25px; list-style: none; margin-bottom:2px !important; margin-top:2px !important; }
+ol ol.toc { margin-left:-24px; text-indent:24px; }
+ol.toc li {text-align: left; }
+div.tocfloat { font-size: smaller; margin-bottom: 10px;
+    border-top: 1px dotted #555555; border-bottom: 1px dotted #555555;
+    padding-top: 5px;
+    width: 38%; float: right; margin-left: 10px; clear: right;
+    margin-right:-21px; padding-right: 13px; padding-left: 13px;
+    background-color: #eeeeee; }
+div.toc { font-size: smaller;
+    border: 1px dotted #cccccc;
+    background: #f7f7f7;
+    margin-bottom: 10px; }
+div.toc p { background-color: #f9f6d6;
+    padding: 5px;
+    border-bottom:  1px dotted #cccccc; }
+div.ref:target {
+  background-color: #B0D3EB;
+}
+div.ref {
+  margin: 0 !important;
+  padding: 0 !important;
+  border:  0 !important;
+  font-size: 85%;
+  text-align: left !important;
+}
+a.reflink {
+  vertical-align: baseline;
+  font-size: 0.8em;
+  position: relative;
+  top: -0.4em;
+}
+.editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+  td.markup1 pre { white-space: pre-wrap; }
+  .noPmTOC, .PmTOCdiv:empty {display:none;}
+.PmTOCdiv { display: inline-block; font-size: 13px; overflow: auto; max-height: 500px;}
+.PmTOCdiv a { text-decoration: none;}
+.back-arrow {font-size: .9em; text-decoration: none;}
+#PmTOCchk + label {cursor: pointer;}
+#PmTOCchk {display: none;}
+#PmTOCchk:not(:checked) + label > .pmtoc-show {display: none;}
+#PmTOCchk:checked + label > .pmtoc-hide {display: none;}
+#PmTOCchk:checked + label + div {display: none;}table.sortable th { cursor: pointer; }
+table.sortable th::after { color: transparent; content: "\00A0\025B8"; }
+table.sortable th:hover::after { color: inherit; content: "\00A0\025B8"; }
+table.sortable th.dir-u::after { color: inherit; content: "\00A0\025BE"; }
+table.sortable th.dir-d::after { color: inherit; content: "\00A0\025B4"; } 
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none;}
+
+--></style>
+  <link href='commentboxplus.css' rel='stylesheet' type='text/css' /><script type="text/javascript">
+function toggle(obj, hide, show) {
+    var elstyle = document.getElementById(obj).style;
+    var text    = document.getElementById(obj + "tog");
+    if(!hide) { var hide = "скрыть"; }
+    if(!show) { var show = "показать"; }
+    if (elstyle.display == 'none') {
+        elstyle.display = 'block';
+        text.innerHTML  = hide;
+    } else {
+        elstyle.display = 'none';
+        text.innerHTML  = show;
+    }
+}
+</script>  <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='load.css' />
+
+  <!-- <link rel='stylesheet' href='load.css' type='text/css'/> -->
+
+
+</head>
+<body><a name='load_topofpage'></a>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbodycaption'></div>
+        <div class='pageleftbody' id='sidebar'>
+          
+<h1><a class='selflink' href='Marksizm.Marksizm.html' title='Энциклопедия марксизма'>Содержание</a></h1>
+<ul><li><a class='wikilink' href='Marksizm.KratkijObzor.html' title='Краткий обзор марксизма'>Марксизм: краткий обзор</a>
+</li><li><a class='wikilink' href='Category.Razdely.html' title='Разделы'>Основные разделы</a> <div class='fpltemplate'><ul  style='text-align: left;'><li  style='text-align: left;'> <a class='wikilink' href='Category.Neokonchennoe.html' title='&#39;&#39;Неоконченное&#39;&#39;'><em>Неоконченное</em></a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Avtoram.html' title='Авторам'>Авторам</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Istorija.html' title='История'>История</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.NauchnyjKommunizm.html' title='Научный коммунизм'>Научный коммунизм</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.OProizvedenijax.html' title='О произведениях'>О произведениях</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Personalii.html' title='Персоналии'>Персоналии</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politika.html' title='Политика'>Политика</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Politehkonomija.html' title='Политэкономия'>Политэкономия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Filosofija.html' title='Философия'>Философия</a>
+</li><li  style='text-align: left;'> <a class='wikilink' href='Category.Ehkonomika.html' title='Экономика'>Экономика</a>
+</li></ul>
+</div>
+</li></ul><hr />
+<ul><li><a class='urllink' href='/wiki/staticload.php' rel='nofollow'>Скачать</a>
+</li></ul><hr />
+<ul><li><a class='wikilink' href='Marksizm.RecentChanges.html' title='Последние изменения'>Последние изменения</a>
+</li></ul>
+        </div><!-- id='sidebar' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url(logo.gif);'
+           href='index.htm' title="Энциклопедия марксизма"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+          <!--PageTitleFmt--><h1 class='titlepage'>Противоречие</h1><!--/PageTitleFmt-->
+          <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p class='vspace'>Диалектическое противоречие &mdash; взаимодействие противоположных, взаимоисключающих сторон и тенденций предметов и явлений, которые вместе с тем находятся во внутреннем единстве и взаимопроникновении, выступая источником самодвижения и развития объективного мира и познания. Выражая сущность <a class='wikilink' href='Marksizm.ZakonEdinstvaIBorqbyProtivopolozhnostej.html' title='Закон единства и борьбы противоположностей'>закона единства и борьбы противоположностей</a>, категория противоречия занимает центральное место в <a class='wikilink' href='Marksizm.DialekticheskijMaterializm.html' title='Диалектический материализм'>материалистической диалектике</a>.
+</p>
+<p class='vspace'>Противоречие, понятое как только внешнее, не может быть источником самодвижения и развития. <a class='wikilink' href='Marksizm.Dialektika.html' title='Диалектика'>Диалектика</a> отличается от <a title='Метафизика' class='createlinktext' href='Marksizm.Metafizika?action=edit.html'>метафизики</a> не вообще признанием противоречий, а признанием противоречий именно в сущности предметов, внутренних, необходимых противоречий.
+</p>
+<p class='vspace'>Диалектические противоречия нужно отличать от так называемых «логических» противоречий, выражающих путаницу и непоследовательность мысли. 
+</p>
+<p class='vspace'>Диалектическое противоречие, будучи источником движения, само движется, развивается. К ступеням развития противоречия в самой сущности предметов относятся <a title='Тождество' class='createlinktext' href='Marksizm.Tozhdestvo?action=edit.html'>тождество</a>, <a title='Различие' class='createlinktext' href='Marksizm.Razlichie?action=edit.html'>различие</a>, <a class='wikilink' href='Marksizm.Protivopolozhnostq.html' title='Противоположность'>противоположность</a>, собственно противоречие. Следовательно, категория «противоречие» характеризует и все ступени развития противоречия в сущности предметов, и высшую его ступень. 
+</p>
+<p class='vspace'>Уже <em>тождество</em> есть зародыш противоречия, т. к. старое, будучи существенно тождественным самому себе, содержит в себе предпосылки нового, т. е. моменты отличия себя от самого себя, но в качестве подчинённых тождеству. 
+</p>
+<p class='vspace'><em>Различие</em> также есть ещё не вполне развитое противоречие, ибо хотя на первый план и выходит сосуществование нового и старого, однако новое образовалось и продолжает развиваться из старого, в связи со старым. 
+</p>
+<p class='vspace'>В <em>противоположности</em> противоречие ещё более развивается, ибо, хотя и выдвигается на первый план отрицание, исключение новым старого, тут также новое образуется из старого и обнаруживается сама внутренняя связь со старым: новое осуществляется как отрицание старого. 
+</p>
+<p class='vspace'>На высшей ступени противоречия, или на ступени <em>собственно противоречия</em>, новое завершает отрицание, преобразование старого, включая старое в снятом, преобразованном виде как свой собственный момент. Теперь формируется связь, внутреннее единство различных сторон, вещей и т. п. На ступени собственно противоречия главным становится не отрицание сторонами противоречия друг друга, а то, что в этом процессе они порождают друг друга в качестве отличных друг от друга. Отрицая друг друга, противоположные стороны переходят друг в друга, являются тождественными. Это &mdash; кульминационная ступень противоречия. 
+</p>
+<p class='vspace'>«<em>Диалектика</em> есть учение о том, как могут быть и как бывают (как становятся) <em>тождественными противоположности</em>, &mdash; при каких условиях они бывают тождественны, превращаясь друг в друга, &mdash; почему ум человека не должен брать эти противоположности за мёртвые, застывшие, а за живые, условные, подвижные, превращающиеся одна в другую» <a class="reflink" name="back1" href="#ref1" title="В. И. Ленин. Конспект книги Гегеля &laquo;Наука логики&raquo;. ПСС, изд. 5,  т. 29, с. 98.">[1]</a>. 
+</p>
+<p class='vspace'>Достижение высшей ступени противоречия тем или иным предметом означает одновременно и созревание предпосылок его исчезновения, ибо такая ступень противоречия есть отрицание предметом самого себя внутри себя, своим внутренним движением. Диалектика по своей сути «в позитивное понимание существующего&hellip; включает в то же время понимание его отрицания, его необходимой гибели, каждую осуществлённую форму она рассматривает в движении, следовательно также и с её преходящей стороны, она ни перед чем не преклоняется и по самому существу своему критична и революционна» <a class="reflink" name="back2" href="#ref2" title="К. Маркс.  Капитал. Том первый. Послесловие ко второму изданию. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 23, с. 22.">[2]</a>.
+</p>
+<p class='vspace'>Характер противоречий зависит от специфики противоположных сторон, а также от тех условий, в которых развёртывается их взаимодействие. Различают внутренние и внешние, антагонистические и неантагонистические, основные и неосновные противоречия. 
+</p>
+<p class='vspace'><em>Внутренние противоречия</em> — это взаимодействие противоположных сторон внутри данного объекта, например внутри данного вида животных, внутри данного организма, данного конкретного общества и т. д. Процесс развития объекта характеризуется не только развёртыванием внутренних противоречий, но и постоянным взаимодействием его с внешними условиями, со средой. <em>Внешние противоречия</em> — это взаимодействие противоположностей, относящихся к разным объектам, например между обществом и природой, организмом и средой и т. п. При этом решающими в развитии в конечном счёте являются внутренние противоречия.
+</p>
+<p class='vspace'>Диалектика различает противоречия также по их характеру (типу). В обществе, основанном на частной собственности и эксплуатации, противоречия носят <a class='wikilink' href='Marksizm.Antagonizm.html' title='Антагонизм'><em>антагонистический</em> характер</a>, что находит выражение в столкновении и борьбе классов, в конфликтах между противостоящими друг другу общественными группами, в невозможности разрешить эти противоречия в рамках данной общественной системы. В условиях социализма на базе общественной собственности антагонизмы исчезают, но противоречия остаются, т. е. формируется новый, <em>неантагонистический</em> тип противоречий, которые могут сознательно и своевременно разрешаться в интересах всего общества, дальнейшего укрепления и совершенствования социализма.
+</p>
+<p class='vspace'><em>Основное противоречие</em> — это противоречие, играющее решающую роль в развитии. Основное противоречие накладывает отпечаток на все остальные, <em>неосновные</em> противоречия.
+</p>
+<p class='vspace'>Противоречие, рассматриваемое диалектикой, всеобще, оно действует и в природе, и в обществе, и в мышлении, сознании.
+</p>
+<p class='vspace'>Противоречие — важнейший методологический принцип, логическая форма развития познания. Противоречия, возникающие и разрешающиеся в мышлении, отражают противоречия объективной реальности. «Так называемая объективная диалектика царит во всей природе, а так называемая субъективная диалектика, диалектическое мышление, есть только отражение господствующего во всей природе движения путем противоположностей, которые и обусловливают жизнь природы своей постоянной борьбой и своим конечным переходом друг в друга, resp. [соответственно] в более высокие формы» <a class="reflink" name="back3" href="#ref3" title="Ф. Энгельс. Диалектика природы. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 20, с. 526.">[3]</a>. 
+</p>
+<p class='vspace'>Если метафизика, ограничиваясь лишь констатацией противоречий, рассматривает противоположные стороны и тенденции противоречивого процесса изолированно друг от друга, то материалистическая диалектика исследует их противоречивое единство. Адекватное познание диалектических противоречий предполагает синтетический подход, раскрывающий возникновение и взаимодействие противоположностей, их единство и взаимопереходы. «Условие познания всех процессов мира в их «самодвижении», в их спонтанном развитии, в их живой жизни, есть познание их как единства противоположностей» <a class="reflink" name="back4" href="#ref4" title="В. И. Ленин. К вопросу о диалектике. ПСС, изд. 5,  т. 29, с. 317.">[4]</a>.
+</p>
+<p class='vspace'>На первоначальном этапе процесса познания, когда объект воспринимается в его исходной целостности и чувственной конкретности, противоречивое единство противоположностей раскрыть невозможно. Поэтому познающий субъект начинает с мысленного расчленения изначального единства, подвергая анализу составляющие его моменты. Познание сторон противоречия в их обособленности друг от друга и даже противоположности предполагает достижение синтеза ранее разделённых противоположностей. В результате этого преодолевается односторонность первоначального подхода к объекту, связанная с анализом одних его моментов в отрыве от других. Единство противоположностей, постигаемое на этом этапе познания, характеризует объект как внутренне расчленённое, противоречивое и в силу этого — самодвижущееся органическое целое.
+</p>
+<p class='vspace'>Методологической основой ревизионистского искажения диалектико-материалистического учения о противоречиях являются механистическое истолкование диалектики и подмена её релятивизмом. Праворевизионистские идеологи, пытаясь обосновать оппортунизм, подчёркивают момент социального единства при капитализме, пренебрегая при этом борьбой противоположностей. «Левые» ревизионисты, маоисты, непомерно расширяя сферу проявления антагонистических противоречий, рассматривают их как всеобщие, а неантагонистические противоречия — как частный случай антагонистических. Взаимодействие противоположностей сводится ими к превращению одной в другую как взаимной перемене мест, при этом момент борьбы противоположностей неправомерно абсолютизируется, а единство игнорируется, что служит основой для крайнего волюнтаризма и субъективизма в политике. Весь ход развития науки и общества полностью опровергает подобные концепции, не имеющие ничего общего с научным, марксистским подходом в исследовании диалектики общественной жизни.
+</p>
+<div class='vspace'></div><div class='frame'><div><b> Литература</b></div>
+<div class="ref" id="ref1"><a class="reflink" href="#back1">[1]</a>&nbsp; В. И. Ленин. Конспект книги Гегеля &laquo;Наука логики&raquo;<small>. ПСС, изд. 5,  <a target='_blank'  class='urllink' href='http://uaio.ru/vil/29.htm#s98' rel='nofollow'>т. 29, с. 98</a></small>. </div>
+<div class="ref" id="ref2"><a class="reflink" href="#back2">[2]</a>&nbsp; К. Маркс.  <a target='_blank'  class='urllink' href='http://esperanto.mv.ru/Marksismo/Kapital1/kapital1-00.html#p22.html' rel='nofollow'>Капитал. Том первый. Послесловие ко второму изданию</a><small>. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 23, с. 22.</small> </div>
+<div class="ref" id="ref3"><a class="reflink" href="#back3">[3]</a>&nbsp; Ф. Энгельс. Диалектика природы<small>. К. Маркс, Ф. Энгельс, Собр. соч., изд. 2, т. 20, с. 526.</small> </div>
+<div class="ref" id="ref4"><a class="reflink" href="#back4">[4]</a>&nbsp; В. И. Ленин. К вопросу о диалектике<small>. ПСС, изд. 5,  <a target='_blank'  class='urllink' href='http://uaio.ru/vil/29.htm#s317' rel='nofollow'>т. 29, с. 317</a></small>. </div>
+</div>
+
+<div class='vspace'></div><hr />
+<p>Разделы: <a class='categorylink' href='Category.Filosofija.html'>Философия</a>, <a class='categorylink' href='Category.DialekticheskijMaterializm.html'>Диалектический материализм</a>
+</p>
+<div class='vspace'></div><hr />
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+    </div><!-- id='content' -->
+<!--HTMLFooter-->
+  </div><!-- id='globalwrapper' -->
+
+
+</body>
+</html>
